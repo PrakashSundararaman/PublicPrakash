@@ -1,0 +1,180 @@
+2018-08-01 02:14:16,413 p=23259 u=root |  PLAY [DEmonstrates pre and post tasks] *****************************************************************************************************
+2018-08-01 02:14:16,424 p=23259 u=root |  TASK [Gathering Facts] *********************************************************************************************************************
+2018-08-01 02:14:18,196 p=23259 u=root |  ok: [ubuntu3]
+2018-08-01 02:14:18,968 p=23259 u=root |  ok: [ubuntu5]
+2018-08-01 02:14:18,998 p=23259 u=root |  ok: [ubuntu1]
+2018-08-01 02:14:19,239 p=23259 u=root |  ok: [ubuntu4]
+2018-08-01 02:14:19,253 p=23259 u=root |  ok: [ubuntu2]
+2018-08-01 02:14:19,259 p=23259 u=root |  TASK [This is a pre task] ******************************************************************************************************************
+2018-08-01 02:14:19,437 p=23259 u=root |  ok: [ubuntu1] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:14:19,438 p=23259 u=root |  ok: [ubuntu2] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:14:19,467 p=23259 u=root |  ok: [ubuntu5] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:14:19,502 p=23259 u=root |  ok: [ubuntu3] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:14:19,523 p=23259 u=root |  ok: [ubuntu4] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:14:19,547 p=23259 u=root |  TASK [This is a task] **********************************************************************************************************************
+2018-08-01 02:14:19,843 p=23259 u=root |  ok: [ubuntu1] => {
+    "msg": "Task..."
+}
+2018-08-01 02:14:19,856 p=23259 u=root |  ok: [ubuntu2] => {
+    "msg": "Task..."
+}
+2018-08-01 02:14:19,882 p=23259 u=root |  ok: [ubuntu5] => {
+    "msg": "Task..."
+}
+2018-08-01 02:14:19,927 p=23259 u=root |  ok: [ubuntu3] => {
+    "msg": "Task..."
+}
+2018-08-01 02:14:19,989 p=23259 u=root |  ok: [ubuntu4] => {
+    "msg": "Task..."
+}
+2018-08-01 02:14:19,996 p=23259 u=root |  TASK [This is a post task] *****************************************************************************************************************
+2018-08-01 02:14:20,250 p=23259 u=root |  ok: [ubuntu1] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:14:20,251 p=23259 u=root |  ok: [ubuntu2] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:14:20,316 p=23259 u=root |  ok: [ubuntu5] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:14:20,328 p=23259 u=root |  ok: [ubuntu3] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:14:20,381 p=23259 u=root |  ok: [ubuntu4] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:14:20,383 p=23259 u=root |  PLAY RECAP *********************************************************************************************************************************
+2018-08-01 02:14:20,383 p=23259 u=root |  ubuntu1                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:14:20,383 p=23259 u=root |  ubuntu2                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:14:20,383 p=23259 u=root |  ubuntu3                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:14:20,384 p=23259 u=root |  ubuntu4                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:14:20,384 p=23259 u=root |  ubuntu5                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:16:55,305 p=23681 u=root |  PLAY [DEmonstrates pre and post tasks] *****************************************************************************************************
+2018-08-01 02:16:55,315 p=23681 u=root |  TASK [Gathering Facts] *********************************************************************************************************************
+2018-08-01 02:16:57,247 p=23681 u=root |  ok: [ubuntu4]
+2018-08-01 02:16:57,766 p=23681 u=root |  ok: [ubuntu5]
+2018-08-01 02:16:57,804 p=23681 u=root |  ok: [ubuntu1]
+2018-08-01 02:16:58,116 p=23681 u=root |  ok: [ubuntu3]
+2018-08-01 02:16:58,147 p=23681 u=root |  ok: [ubuntu2]
+2018-08-01 02:16:58,327 p=23681 u=root |  ok: [ubuntu6]
+2018-08-01 02:16:58,332 p=23681 u=root |  TASK [This is a pre task] ******************************************************************************************************************
+2018-08-01 02:16:58,534 p=23681 u=root |  ok: [ubuntu1] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:16:58,534 p=23681 u=root |  ok: [ubuntu2] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:16:58,580 p=23681 u=root |  ok: [ubuntu5] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:16:58,597 p=23681 u=root |  ok: [ubuntu3] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:16:58,621 p=23681 u=root |  ok: [ubuntu4] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:16:58,621 p=23681 u=root |  ok: [ubuntu6] => {
+    "msg": "Pre Task...."
+}
+2018-08-01 02:16:58,628 p=23681 u=root |  TASK [This is a task] **********************************************************************************************************************
+2018-08-01 02:16:58,859 p=23681 u=root |  ok: [ubuntu1] => {
+    "msg": "Task..."
+}
+2018-08-01 02:16:58,861 p=23681 u=root |  ok: [ubuntu2] => {
+    "msg": "Task..."
+}
+2018-08-01 02:16:58,861 p=23681 u=root |  ok: [ubuntu5] => {
+    "msg": "Task..."
+}
+2018-08-01 02:16:58,862 p=23681 u=root |  ok: [ubuntu3] => {
+    "msg": "Task..."
+}
+2018-08-01 02:16:58,878 p=23681 u=root |  ok: [ubuntu4] => {
+    "msg": "Task..."
+}
+2018-08-01 02:16:58,902 p=23681 u=root |  ok: [ubuntu6] => {
+    "msg": "Task..."
+}
+2018-08-01 02:16:58,908 p=23681 u=root |  TASK [This is a post task] *****************************************************************************************************************
+2018-08-01 02:16:59,111 p=23681 u=root |  ok: [ubuntu1] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:16:59,112 p=23681 u=root |  ok: [ubuntu2] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:16:59,112 p=23681 u=root |  ok: [ubuntu5] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:16:59,158 p=23681 u=root |  ok: [ubuntu3] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:16:59,159 p=23681 u=root |  ok: [ubuntu4] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:16:59,159 p=23681 u=root |  ok: [ubuntu6] => {
+    "msg": "Post Task..."
+}
+2018-08-01 02:16:59,161 p=23681 u=root |  PLAY RECAP *********************************************************************************************************************************
+2018-08-01 02:16:59,162 p=23681 u=root |  ubuntu1                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:16:59,162 p=23681 u=root |  ubuntu2                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:16:59,162 p=23681 u=root |  ubuntu3                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:16:59,162 p=23681 u=root |  ubuntu4                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:16:59,162 p=23681 u=root |  ubuntu5                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 02:16:59,162 p=23681 u=root |  ubuntu6                    : ok=4    changed=0    unreachable=0    failed=0   
+2018-08-01 03:00:30,649 p=25406 u=root |  PLAY [Demonstrate use of docker_container ansible module] **********************************************************************************
+2018-08-01 03:00:30,659 p=25406 u=root |  TASK [Gathering Facts] *********************************************************************************************************************
+2018-08-01 03:00:31,750 p=25406 u=root |  ok: [localhost]
+2018-08-01 03:00:31,760 p=25406 u=root |  TASK [Start the ubuntu container] **********************************************************************************************************
+2018-08-01 03:00:31,777 p=25406 u=root |  fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'item' is undefined\n\nThe error appears to have been in '/root/Verizon/Day3/playbooks/start_containers.yml': line 4, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Start the ubuntu container\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: 'item' is undefined"}
+2018-08-01 03:00:31,781 p=25406 u=root |  	to retry, use: --limit @/root/Verizon/Day3/playbooks/start_containers.retry
+
+2018-08-01 03:00:31,781 p=25406 u=root |  PLAY RECAP *********************************************************************************************************************************
+2018-08-01 03:00:31,782 p=25406 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-08-01 03:02:05,707 p=25550 u=root |  PLAY [Demonstrate use of docker_container ansible module] **********************************************************************************
+2018-08-01 03:02:05,716 p=25550 u=root |  TASK [Gathering Facts] *********************************************************************************************************************
+2018-08-01 03:02:06,846 p=25550 u=root |  ok: [localhost]
+2018-08-01 03:02:06,856 p=25550 u=root |  TASK [Start the ubuntu container] **********************************************************************************************************
+2018-08-01 03:02:08,671 p=25550 u=root |  changed: [localhost] => (item=1)
+2018-08-01 03:02:10,236 p=25550 u=root |  changed: [localhost] => (item=2)
+2018-08-01 03:02:11,731 p=25550 u=root |  changed: [localhost] => (item=3)
+2018-08-01 03:02:13,243 p=25550 u=root |  changed: [localhost] => (item=4)
+2018-08-01 03:02:14,508 p=25550 u=root |  changed: [localhost] => (item=5)
+2018-08-01 03:02:14,534 p=25550 u=root |  TASK [Start the centos container] **********************************************************************************************************
+2018-08-01 03:02:15,575 p=25550 u=root |  changed: [localhost] => (item=1)
+2018-08-01 03:02:16,540 p=25550 u=root |  changed: [localhost] => (item=2)
+2018-08-01 03:02:17,589 p=25550 u=root |  changed: [localhost] => (item=3)
+2018-08-01 03:02:18,631 p=25550 u=root |  changed: [localhost] => (item=4)
+2018-08-01 03:02:19,673 p=25550 u=root |  changed: [localhost] => (item=5)
+2018-08-01 03:02:19,694 p=25550 u=root |  PLAY RECAP *********************************************************************************************************************************
+2018-08-01 03:02:19,694 p=25550 u=root |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-08-01 03:13:46,946 p=26844 u=root |  PLAY [Demonstrate use of docker_container ansible module] **********************************************************************************
+2018-08-01 03:13:46,954 p=26844 u=root |  TASK [Gathering Facts] *********************************************************************************************************************
+2018-08-01 03:13:48,163 p=26844 u=root |  ok: [localhost]
+2018-08-01 03:13:48,174 p=26844 u=root |  TASK [Start the ubuntu container] **********************************************************************************************************
+2018-08-01 03:13:48,906 p=26844 u=root |  ok: [localhost] => (item=1)
+2018-08-01 03:13:49,329 p=26844 u=root |  ok: [localhost] => (item=2)
+2018-08-01 03:13:49,753 p=26844 u=root |  ok: [localhost] => (item=3)
+2018-08-01 03:13:50,165 p=26844 u=root |  ok: [localhost] => (item=4)
+2018-08-01 03:13:50,577 p=26844 u=root |  ok: [localhost] => (item=5)
+2018-08-01 03:13:50,599 p=26844 u=root |  TASK [Remove the ubuntu container] *********************************************************************************************************
+2018-08-01 03:13:51,395 p=26844 u=root |  changed: [localhost] => (item=3)
+2018-08-01 03:13:52,119 p=26844 u=root |  changed: [localhost] => (item=4)
+2018-08-01 03:13:52,867 p=26844 u=root |  changed: [localhost] => (item=5)
+2018-08-01 03:13:52,880 p=26844 u=root |  TASK [Start the centos container] **********************************************************************************************************
+2018-08-01 03:13:53,346 p=26844 u=root |  ok: [localhost] => (item=1)
+2018-08-01 03:13:53,764 p=26844 u=root |  ok: [localhost] => (item=2)
+2018-08-01 03:13:54,166 p=26844 u=root |  ok: [localhost] => (item=3)
+2018-08-01 03:13:54,567 p=26844 u=root |  ok: [localhost] => (item=4)
+2018-08-01 03:13:54,968 p=26844 u=root |  ok: [localhost] => (item=5)
+2018-08-01 03:13:54,985 p=26844 u=root |  PLAY RECAP *********************************************************************************************************************************
+2018-08-01 03:13:54,986 p=26844 u=root |  localhost                  : ok=4    changed=1    unreachable=0    failed=0   
