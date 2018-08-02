@@ -1,0 +1,6 @@
+[all]
+ubuntu2 ansible_user=root ansible_host=localhost ansible_port=2002 ansible_private_key_file=/root/.ssh/id_rsa
+ubuntu3 ansible_user=root ansible_host=localhost ansible_port=2003 ansible_private_key_file=/root/.ssh/id_rsa
+ubuntu4 ansible_user=root ansible_host=localhost ansible_port=2004 ansible_private_key_file=/root/.ssh/id_rsa
+
+

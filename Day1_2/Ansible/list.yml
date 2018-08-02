@@ -1,0 +1,12 @@
+- name: DEmonstrate list varilable and its navigation
+  hosts: all
+  vars:
+     software_tools:
+         - vim
+         - tree
+         - net-tools
+  tasks:
+     - name: Install the utility
+       apt: name="{{item}}" state=latest update_cache=yes
+       with_list: "{{software_tools}}"
+
