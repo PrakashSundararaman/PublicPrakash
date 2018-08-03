@@ -1,6 +1,6 @@
 - name: Install nginx on Ubuntu and CentOS
   hosts: all
-  gathering_facts: False
+  gather_facts: no
   vars:
     - greeting_msg: DevOps!
     - provisioner_tool: Docker
