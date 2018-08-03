@@ -1,5 +1,8 @@
-- name: Start the ubuntu container
-  docker_container:
+- name: ADD CONTAINERS
+  hosts: localhost
+  tasks:
+   - name: Start the ubuntu container
+     docker_container:
         name: "ubuntu{{item}}"
         hostname: "ubuntu{{item}}"
         image: verizon/ansible-ubuntu
@@ -7,10 +10,10 @@
         ports:
           - "200{{item}}:22"
           - "800{{item}}:80"
-  with_sequence: start=1 end=2
+      with_sequence: start=1 end=2
 
-- name: Start the centos container
-  docker_container:
+   - name: Start the centos container
+     docker_container:
         name: "centos{{item}}"
         hostname: "centos{{item}}"
         image: verizon/ansible-centos
@@ -18,4 +21,4 @@
         ports:
           - "300{{item}}:22"
           - "900{{item}}:80"
-  with_sequence: start=1 end=2
+     with_sequence: start=1 end=2
