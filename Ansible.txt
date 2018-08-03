@@ -1,0 +1,275 @@
+Day 1
+
+Agile/Scrum - One minute manager
+
+VM - Hypervisor - Vmware Workstation, Player, VSphere, Fusion, Oracle Virtualbox, Hyper-V, Parallels
+
+Bare Metal - VSphere = No need to have Host OS
+
+Quad core - overall 8 m/c - 1 for Host OS, 7 for VMs
+
+Quad core - Overall 500-600 containers in Docker
+
+Chef, Pubbet - Ruby based, Ansible - Java, YAML
+
+Docker - Horizondal & Vertical scaling
+
+Docker - Linux tech - Kernal - Namespace - CGroups - Control Groups (to put upper limit like %of CPU, RAM etc.)
+
+Container management - Kubernetes
+
+Docker INC - Go language (developed by Google)
+
+Docker - Docker Engine - Docker Local Registry - Docker Local Images 
+(Client)    (Server)                           - Docker Remote Registry(hub.docker.com)  - Pull/Download
+          
+          (Docker for Windows/MAC) - Requires Linux backgroud - it will be having thin layer of Linux		  
+
+Docker - Docker Engine - Linux socket - REST API/TCP/IP if Engine is in different machine
+
+Docker SWARM, COMPOSE - Native Orchestration Framework, Kubernetes (Google supported), OpenShift (Redhat) - Integrated Jenkins, Git, Kubernetes
+
+Alternate to Docker - LXC, MESOS, Assure, AWS, Rkt C Rocker, Alexi
+
+COW - Copy on Write
+
+Docker Image - Base OS + Layers 1...x
+Container - Base 0S + Layers 1...x(Read) + Writable Layer
+
+nginx - 80 - 8000 -> Private IP -> Tunnelling with public IP with different ports
+
+Mounting external drive or S3 to the container 
+docker run -d --name verizon8 -v /root/Verizon/Day1/data:/root/data nginx
+                 (Container name)      (Local directory)     (Containter directory)
+
+Automation tools/Language
+
+Louis - 9600221951
+Sathish - 7358666018
+
+Puppet, Chef - Client/Server, Pull based
+
+Puppet - Polling every now and then - DSL (Domain Specific Language) is Ruby 
+
+Salt stack/Ansible - Agentless, Push based
+
+Ansible - Push based, DSL is YAML (Yet another Markup language) ->
+
+Ansible Architecture ->
+
+Ansible control machine (Laptop) - Install Ansible (Automatically install Python) -> Playbook -> Nodes with SSH and Python
+(+Inventory file, Native connection Details)
+
+YAML will be converted to Python script and SCP to Nodes and will execute and capture the logs
+
+Imperative Programming Language - What to do and How to do it (C++, C#, AngularJS ..)
+Declartive language - What to do only, How to do will be decided by Language itself (Ansible, Pubbet, etc.)
+
+
+JSON is more application friendly, YAML is more user friendly
+
+docker rm -f ubuntu3
+docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+
+ssh root@172... 
+ssh -p 2003 root@localhost
+
+https://github.com/tektutor
+
+Q1: Docker Local repository
+Q2: Jenkins with Ansible
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Day 2 
+
+Docker commands
+
+http://www.tektutor.org/commonly-used-docker-commands/  
+
+ansible -i hosts all -m ping
+
+       (i = inventory) (hosts - File name) (all - every machine) (m = module - Python) 
+
+Tools
+
+ Ansible - Utility/Tool
+ To execute adhoc commands
+
+ Ansible - Playbook
+ Ansible-Vault
+ Ansible-Galaxy
+ 
+ 
+Playbook structure
+
+  Playbook - Play (One to Many) - Tasks (One to Many) - Ansible Module (One to One)
+               |
+               |
+	 Hosts (Group of machines)
+
+YAML -> TAB should be avoided, Space should be used for intentation
+
+How apt is working?  
+ apt-get update -> update_cache=yes   (Both are equivalent)
+ apt-get install vim
+ 
+similarly in CentOS
+ 
+ yum install epel-release
+ yum install vim
+ yum install python-pip
+ 
+  package manager = apt or apt-get (Debian family like Ubuntu)
+  package manager = yum or rpm (RHEL family like Fedora, CentOS, RHEL)
+  
+  apt-get update will get software catelogue for the version that you are having. 
+
+  /etc/apt/sources.list
+  
+Ansible
+
+ VIM & TREE
+ CP the file from container to install the NGINX in all the containers
+ Lists
+ Dictionary
+ 
+ 
+ Day 3 
+ --------------------------------------------------------------------------------------------------
+ 
+ 
+ Ignore_errors = True
+ 
+ It will ignore the error that received in one task and it will move to other tasks, otherwise, it will stop the task execution on that container/machine
+ 
+ Ansible recommended structure
+ 
+ 1) Read inventory variables
+ 2) Read Group variables
+ 3) Read Host variables
+
+ Host variables has higher priority
+ 
+ 
+ 1 # config file for ansible -- https://ansible.com/
+  2 # ===============================================
+  3 
+  4 # nearly all parameters can be overridden in ansible-playbook
+  5 # or with command line flags. ansible will read ANSIBLE_CONFIG,
+  6 # ansible.cfg in the current working directory, .ansible.cfg in
+  7 # the home directory or /etc/ansible/ansible.cfg, whichever it
+  8 # finds first
+
+
+ host_key_checking=False   (This will avoid handling "Are you sure want to login msg? Y/N" so that it can be completedly automated - Refer ansible.cfg in Day3/playbooks folder
+ 
+ 
+ANSIBLE VAULT 
+ 
+ansible-vault encrypt <filename>
+              decrypt 
+			  edit 
+			  create
+
+--------------------------------------------------------------------------------------------------------------
+DAY 4
+
+Today's agenda
+
+Ansible Roles
+Python Basics 
+Dynamic Inventory 
+Custom module
+
+Ansible Galaxy - Ansible Roles 
+
+ Default - Constant items
+ vars - Variable items
+ files - files copied by applicaion
+ template - files used by template mdoule
+ tasks - Normal task 
+ meta - platfrom, license
+ handlers - Normal handler task
+ tests - not a major use, used to do verify 
+
+
+Facts - Built-in variables
+-------------------------
+
+Custom module in Ansible
+
+
+Attibutes are like src for apt function to represent it.. 
+Like that Library/add.py - firstinput and secondinput in Day4 session 
+
+
+DAY 5
+
+docker.io, docker.com
+
+WINRM - Ansible documentation 2.5
+
+Created new VM with Ubuntu 16.04 iso
+apt install ansible
+apt install docker-io
+
+apt-install repository ansible-ansible (upgrade to newer version)
+
+Installed Tower after downloading the files and also after changing the configure files - Inventory
+
+Changed the AWX and ROOT passwords and user name
+
+open Ansible Tower - localhost/#/home
+
+Done the changes in settings of Ansible Tower
+Done the changes in Projects tab after creating project from Github
+Done the changes in Inventory and added the hosts
+
+
+---GIT---
+
+git init
+git status
+git add *   (to stage)
+git rm --cached * (to unstage)
+git commit -m "Initial commit."  (-m checkin commit)
+git push
+
+--
+
+Jegan@tektutor.org/commonly-used-docker-commands/
+
+mail2jegan@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2906 @@
+DAY 1
+
+yum -y install openssh-server
+    2  # yum -y install openssh-server openssh-clients
+    3   chkconfig sshd on
+    4  service sshd start
+    5  netstat -tulpn | grep :22
+    6  vi /etc/sysconfig/iptables
+    7  http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    8  weget http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    9  exit
+   10  docker images
+   11  ls
+   12  ./dind-cluster-v1.8.sh stop
+   13  clear
+   14  ls
+   15  pwd
+   16  mkdir test
+   17  cd test
+   18  docker ps
+   19  exit
+   20  yum installl curl
+   21  yum install curl
+   22  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   23  chmod +x ./kubectl 
+   24  mv ./kubectl  /usr/local/bin/kubectl
+   25  kubectl get nodes
+   26  uname -a
+   27  which kubectl
+   28  kubectl get nodes
+   29  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   30  chmod +x ./kubectl 
+   31  mv ./kubectl  /usr/local/bin/kubectl
+   32  kubectl get nodes
+   33  ls
+   34  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   35  chmod +x ./kubectl 
+   36  kubectl get nodes
+   37  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   38  chmod +x ./kubectl 
+   39  kubectl get nodes
+   40  ./kubectl get nodes
+   41  mv ./kubectl  /usr/local/bin/kubectl
+   42  kubectl get nodes
+   43  kubectl get pods
+   44  kubectl get pods --all-namespaces
+   45  kubectl run nginx --image=nginx --replicas=4
+   46  kubectl get pods
+   47  kubectl get pods -w
+   48  ls
+   49  exit
+   50  yum install -y yum-utils device-mapper-persistent-data lvm2
+   51  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   52  yum install docker
+   53  yum install ansible
+   54  docker --version
+   55  ansible --version
+   56  docker run -it ubuntu /bin/bash
+   57  service enable docker
+   58  systemctl enable docker
+   59  systemctl start docker
+   60  docker run -it ubuntu bash
+   61  wget https://cdn.rawgit.Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   62  wget https://cdn.rawgit.com/Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   63  chmod +x dind-cluster-v1.8.sh 
+   64  ./dind-cluster-v1.8.sh up
+   65  docker --version
+   66  docker images
+   67  ./dind-cluster-v1.8.sh up
+   68  yum install docker-ce
+   69  yum remove docker.io
+   70  yum remove docker
+   71  yum install docker-ce
+   72  yum update
+   73  yum install docker-ce
+   74  yum remove docker-comon-2:1.13.1-53.git774336d.el7.centos.x86_64
+   75  yum remove docker-common-2:1.13.1-53.git774336d.el7.centos.x86_64
+   76  yum install docker-ce
+   
+   -----------------------------\
+   77  docker --version
+   78  docker images
+   79  systemctl enable docker
+   80  systemctl start docker
+   81  docker images
+   82  ./dind-cluster-v1.8.sh up
+   83  kubectl get nodes
+   84  export PATH="\$HOME/.kubeadm-dind-cluster:$P" 
+   85  clear" 
+   86  clear
+   87  kubectl get pods
+   88  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   89  yum install curl
+   90  exit
+   91  service sshd start
+   92  service sshd restart
+   93  vi /etc/systemconfig/iptables
+   94  exit
+   95  docker images
+   96  ansible --version
+   97  docker run hello-world
+   98  docker images
+   99  docker run hello-world
+  100  ps -aux | grep dockerd
+  101  docker info
+  102  cd /var/lib/docker
+  103  ls -l
+  104  cd image/
+  105  ls -l
+  106  cd overlay2/
+  107  cd imagedb/
+  108  ls -l
+  109  cd content/
+  110  ls -l
+  111  cd sha256/
+  112  ls -l
+  113  clear
+  114  docker ps
+  115  docker ps -a
+  116  docker run -it ubuntu /bin/bash
+  117  docker run -dit ubuntu /bin/bash
+  118  docker start Verizon1
+  119  docker ps
+  120  docker exec -it modest_turing /bin/bash
+  121  docker ps
+  122  docker stop modest_turing 
+  123  docker ps
+  124  docker exec -it modest_turing /bin/bash
+  125  docker start modest_turing 
+  126  docker exec -it modest_turing /bin/bash
+  127  docker inspect modest_turing 
+  128  history
+    1  apt install vim
+    2  vim
+    3  exit
+    4  apt update && apt install -y vim
+	
+  129  vim dockerfile 
+  130  docker build -t verizon2 .
+  131  docker images 
+  132  docker run -it verizon2 /bin/bash
+  133  docker pull mysql
+  134  docker run -it verizon2 /bin/bash
+  135  docker ps
+  136  docker inspect 53d4fb29bb65 grep IPA
+  137  docker inspect 53d4fb29bb65 | grep IPA
+  138  docker inspect 53d4fb29bb65
+  139  docker network create mynetwork --subnet 172.18.0.0/24
+  140  docker network ls
+  141  docker run -dit --name verizon3 --network=mynetwork ubuntu bash
+  142  docker inspect verizon3 | grep IPA
+  143  ifconfig
+  144  docker run -d --name nginx1 nginx
+  145  docker ps
+  146  docker inspect nginx | grep IPA
+  147  docker inspect nginx1 | grep IPA
+  148  curl http://172.17.0.3
+  149  docker run -d --name verizon3 -p 8000:80 nginx
+  150  docker run -d --name verizon4 -p 8000:80 nginx
+  151  docker ps
+  152  curl http://localhost:8000
+  153  ifconfig
+  154  docker rm -f verizon4
+  154  docker rm $(docker ps -aq)
+  155  docker run -d --name verizon5 -p 8000:80 nginx
+  156  docker run -d --name verizon6 -p 8001:80 nginx
+  157  docker run -d --name verizon7 -p 8001:80 nginx
+  158  clear
+  159  history
+  160  cd ..
+  161  ls -l
+  162  cd ubuntu-ansible/
+  163  ls -l
+  164  vi Dockerfile 
+  165  ssh-keygen
+  166  docker build -t verizon/ansible-ubuntu .
+  
+  167  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  168  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  169  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  
+  170  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  171  ssh -p 2003 root@localhost
+  172  ssh -p 2004 root@localhost
+  173  ssh -p 2002 root@localhost
+  174  clear
+  175  ls -l
+  176  history
+  177  ls -l
+  178  vi Dockerfile 
+  179  history
+
+
+[root@localhost ubuntu-ansible]# ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:KxoCVFvI7GSuvJ7DknotCSyic+n+ED56aqBO/B9CCIU root@localhost.localdomain
+The key's randomart image is:
++---[RSA 2048]----+
+| .+...           |
+|E..*o            |
+|..=.             |
+|o .o             |
+|+.o.    S        |
+|**..     .       |
+|B=*=... .        |
+|B*X+oo..         |
+|X%+++.           |
++----[SHA256]-----+
+[root@localhost ubuntu-ansible]# 
+
+FROM ubuntu:16.04
+
+MAINTAINER Prakash <prakash.j.sundararaman@verizon.com>
+
+RUN apt-get update && apt-get install -y openssh-server && apt-get install -y python-minimal
+RUN mkdir /var/run/sshd
+RUN echo 'root:root' | chpasswd
+
+#RUN echo 'jenkins:jenkins' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# SSH login fix. Otherwise user is kicked off after login
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+COPY authorized_keys /root/.ssh/authorized_keys
+
+#ENV NOTVISIBLE "in users profile"
+#RUN echo "export VISIBLE=now" >> /etc/profile
+
+EXPOSE 22
+EXPOSE 80
+CMD ["/usr/sbin/sshd", "-D"]
+
+---------------------------------------------------------------------------------------------------------------
+
+DAY 2
+
+
+ 180  docker info
+  181  cd /var/lib/docker
+  182  ls -l
+  183  cd image/
+  184  ls -l
+  185  cd overlay2/
+  186  cd imagedb/
+  187  ls -l
+  188  cd content/
+  189  ls -l
+  190  cd sha256/
+  191  ls -l
+  192  clear
+  193  docker ps
+  194  docker ps -a
+  195  docker run -it ubuntu /bin/bash
+  196  docker run -dit ubuntu /bin/bash
+  197  docker start Verizon1
+  198  docker ps
+  199  docker exec -it modest_turing /bin/bash
+  200  docker ps
+  201  docker stop modest_turing 
+  202  docker ps
+  203  docker exec -it modest_turing /bin/bash
+  204  docker start modest_turing 
+  205  docker exec -it modest_turing /bin/bash
+  206  docker inspect modest_turing 
+  207  history
+  208  clear
+  209  history
+  210  clear
+  211  docker images
+  212  docker rmi hello-world
+  213  docker ps -q
+  214  docker rm -f $(docker ps -q)
+  215  docker stop (docker ps -q) && docker rm $(docker ps -aq)
+  216  docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+  217  docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+  218  docker start $(docker ps -aq)
+  219  docker images
+  220  docker ps
+  221  docker run -dit --name Verizon1 ubuntu bash
+  222  docker exec -it Verizon1 bash
+  223  docker inspect ubuntu
+  224  docker exec -it Verizon1 bash
+  225  clear
+  226  pwd
+  227  cd /root/Verizon/
+  228  ls -l
+  229  cd Day1/
+  230  ls -l
+  231  cd data/
+  232  ls -l
+  233  vi data.txt 
+  234  ls -l
+  235  git clone https://github.com/tektutor/ubuntu-ansible.git
+  236  pwd
+  237  ls -l
+  238  mv ubuntu-ansible/ /root/Verizon/Day1
+  239  cd ..
+  240  ls -l
+  241  cd ubuntu-ansible/
+  242  ls -l
+  243  vi Dockerfile 
+  244  ssh-keygen
+  245  docker build -t verizon/ansible-ubuntu .
+  246  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  247  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  248  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  249  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  250  ssh -p 2003 root@localhost
+  251  ssh -p 2004 root@localhost
+  252  ssh -p 2002 root@localhost
+  253  clear
+  254  ls -l
+  255  history
+  256  ls -l
+  257  vi Dockerfile 
+  258  history
+  259  exitexit
+  260  xit
+  261  exit
+  262  cd Verizon/Day1/
+  263  cd ubuntu-ansible/
+  264  cp /root/.ssh/id_rsa.pub authorized_keys
+  265  ls -l
+  266  vi authorized_keys 
+  267  clear
+  268  exit
+  269  clear
+  270  ls -l
+  271  history
+  272  clear
+  273  docker ps
+  274  docker inspect 2919653d59f2 | grep IPA
+  275  docker inspect | grep IPA
+  276  docker inspect * | grep IPA
+  277  docker inspect 0ba* | grep IPA
+  278  docker inspect 0ba9092b5fd8 | grep IPA
+  279  clear
+  280  docker exec -it 0ba9092b5fd8 /bin/bash
+  281  docker stop 0ba9092b5fd8
+  282  docker start 0ba9092b5fd8
+  283  docker stop 0ba9092b5fd8
+  284  docker run -dit 0ba9092b5fd8 /bin/bash
+  285  docker images
+  286  docker run -dit mysql /bin/bash
+  287  docker run -dit verizon2 /bin/bash
+  288  docker run -dit verizon2 
+  289  clear
+  290  docker ps -a
+  291  docker rename verizon2 verizon02
+  292  clear
+  293  docker ps
+  294  clear
+  295  ls -l
+  296  docker images
+  297  docker ps
+  298  docker ps -a
+  299  cd /var/lib
+  300  ls -l
+  301  cd docker
+  302  ls -l
+  303  cd containers
+  304  ls -l
+  305  vi 0ba9092b5fd8c28f6681b493b1f2ed6ad12c9c839d98ba728dd99daa0478c139/
+  306  cd 0ba9092b5fd8c28f6681b493b1f2ed6ad12c9c839d98ba728dd99daa0478c139/
+  307  ls -l
+  308  vi config.v2.json 
+  309  cd ..
+  310  docker ps -a
+  311  docker inspect -f {{.Networksettings.IPaddress}}
+  312  docker inspect -f {{.Networksettings.IPaddress}} | grep IPA
+  313  clear
+  314  docker inspect -f {{.Networksettings.IPaddress}} verizon3
+  315  docker inspect -f {{Networksettings.IPaddress}} verizon3
+  316  docker inspect -f {{.Networksettings.IPaddress}} verizon2
+  317  lear
+  318  clear
+  319  docker ps
+  320  docker ps -a
+  321  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  322  docker start ubuntu4
+  323  docker ps -a
+  324  clear
+  325  ssh -p 2004 root@localhost
+  326  clear
+  327  docker cp authorized_keys asdfsaf:/root/.ssh/authorized_keys1
+  328  cd /Verizon
+  329  cd ..
+  330  cd /Verizon
+  331  pwd
+  332  ls -l
+  333  cd /root
+  334  ls -
+  335  ls -l
+  336  cd Verizon/
+  337  ls -l
+  338  cd Day1/
+  339  ls -l
+  340  cd data/
+  341  ls -l
+  342  cd ..
+  343  cd ubuntu-ansible/
+  344  ls -l
+  345  docker cp authorized_keys Verzion4:/root/.ssh/authorized_keys1
+  346  docker cp authorized_keys Verzion4:/root/authorized_keys1
+  347  docker ps 
+  348  docker cp authorized_keys Ubuntu:/root/.ssh/authorized_keys1
+  349  docker cp authorized_keys Ubuntu4:/root/.ssh/authorized_keys1
+  350  docker cp authorized_keys ubuntu4:/root/.ssh/authorized_keys1
+  351  docker exec ubuntu4
+  352  docker exec -it ubuntu /root
+  353  docker exec -it ubuntu4 /root
+  354  docker exec -it ubuntu4 /bin/bash
+  355  clear
+  356  ls -l
+  357  docker exec -it ubuntu3 /bin/bash
+  358  ssh -p 2001 root@localhost
+  359  ssh -p 2002 root@localhost
+  360  ifconfig
+  361  clear
+  362  ssh -p 2001 root@localhost
+  363  ssh -p 2004 root@localhost
+  364  ssh -p 2002 root@localhost
+  365  ssh -p 2003 root@localhost
+  366  ssh -p 2004 root@localhost
+  367  ls -l
+  368  docker ps -a
+  369  ssh -p 2004 root@localhost
+  370  docker exec -it ubuntu4 /bin/bash
+  371  ssh -p 2004 root@localhost
+  372  clear
+  373  docker images
+  374  cmp verizon2 myimages
+  375  pwd
+  376  cd /var/
+  377  ls -l
+  378  cd ..
+  379  ls -l
+  380  cd /etc
+  381  ls -l
+  382  cd ..
+  383  ls -l
+  384  cd /var
+  385  ls -l
+  386  cd opt
+  387  ls -l
+  388  cd ..
+  389  clear
+  390  ls -l
+  391  cd /root
+  392  clear
+  393  ls -l
+  394  cd Verizon/
+  395  ls -l
+  396  cd Day1
+  397  ls-l
+  398  ls -l
+  399  cd CustomImage/
+  400  ls -l
+  401  vi dockerfile 
+  402  cd ..
+  403  cd ubuntu-ansible/
+  404  ls -l
+  405  clear
+  406  ansible
+  407  ansible --version
+  408  clear
+  409  ansible --version
+  410  vi /etc/ansible/ansible.cfg 
+  411  cd /etc/ansible/
+  412  vi hosts 
+  413  docker --version
+  414  python --version
+  415  ansible --version
+  416  winrm
+  417  clear
+  418  pwd
+  419  cd /root/Verizon/Day1/
+  420  mkdir Ansible
+  421  cd Ansible/
+  422  vi hosts
+  423  docker ps
+  424  vi hosts
+  425  vim hosts 
+  426  docker run -d --name ubuntu5 -p 2005:22 -p 8005:80 verizon/ansible-ubuntu
+  427  clear
+  428  docker run -d --name ubuntu5 -p 2010:22 -p 8010:80 verizon/ansible-ubuntu
+  429  docker run -d --name ubuntu10 -p 2010:22 -p 8010:80 verizon/ansible-ubuntu
+  430  clear
+  431  ps -a
+  432  docker ps 
+  433  ssh -p 2010 root@localhost
+  434  ssh -p 2005 root@localhost
+  435  vi hosts 
+  436  ansible -i hosts all -m ping
+  437  echo "" > /root/.ssh/authorized_keys
+  438  ansible -i hosts all -m ping
+  439  cd /root/.ssh
+  440  ls -l
+  441  vi known_hosts 
+  442  vi authorized_keys 
+  443  ssh -p 2003 root@localhost
+  444  clear
+  445  ls -l
+  446  vi authorized_keys 
+  447  clear
+  448  ls -l
+  449  cd ..
+  450  ls -l
+  451  cd .ssh
+  452  ls -l
+  453  ssh -p 2003 root@localhost
+  454  ansible -i hosts all -m ping
+  455  cd /root/.ssh
+  456  ls -l
+  457  cd /root/Verizon/Day1/Ansible
+  458  ls 
+  459  ansible -i hosts all -m ping
+  460  cd /root/.ssh
+  461  ls -l
+  462  ansible -i hosts ubuntu3 -m ping
+  463  cd /root/Verizon/Day1/Ansible
+  464  ansible -i hosts ubuntu3 -m ping
+  465  history
+  466  \ansible -i hosts all -m ping
+  467  clear
+  468* 
+  469  ansible-doc -l
+  470  ansible-doc shell
+  471  clear
+  472  ansible -i hosts all -m shell -a "whoami"
+  473  ansible -i hosts all -m shell -a "ls"
+  474  ansible -i hosts all -m shell -a "ls -l"
+  475  ansible -i hosts all -m shell -a "netstat -a"
+  476  docker exec -it ubuntu5 /bin/bash
+  477  ansible -i hosts ubuntu5 -m shell -a "ifconfig"
+  478  ansible -i hosts all -m shell -a "ping"
+  479  pwd
+  480  ls
+  481  vi hosts 
+  482  vi hosts
+  483  clear
+  484  ansible -i hosts all -m shell -a "ping"
+  485  ansible -i hosts all -m shell -a "whoami"
+  486  cd /usr/local/lib
+  487  ls 
+  488  cd ..
+  489  cd /root/Verizon/Day1/
+  490  ls -l
+  491  cd Ansible/
+  492  ls -l
+  493* 
+  494  c d-
+  495  cd -
+  496  clear
+  497  ls -l
+  498  clear
+  499  vim ping.yml
+  500  ansible-playbook -i hosts -m setup
+  501  ansible-playbook -i ubuntu5 -m setup
+  502  ansible-playbook -i hosts ubuntu5 -m setup
+  503  ansible -i hosts ubuntu5 -m setup
+  504  ansible -i hosts ubuntu5 -m setup > out.log 2>&1
+  505* 
+  506  asdfasdfsad > out1.log 2>&1
+  507  ls -l
+  508  vi out1.log 
+  509  clear
+  510  ls -l
+  511  vim installnginx.yml
+  512  ansible --version
+  513  docker exec -it ubuntu1 bash
+  514  clear
+  515  docker inspect ubuntu1 | grep IPA
+  516  curl http://172.17.0.2
+  517  curl http://localhost:8001
+  518  ifconfig
+  519  curl http://192.168.122.1:8001
+  520  clear
+  521  history
+  522  :q1
+  523  ssh -p 2003 root@localhost
+  524  ssh -p 2010 root@localhost
+  525  clear
+  526  ls -l
+  527  cd /var/lib
+  528  ls -l
+  529  cd ..
+  530  ls -l
+  531  cd /var/
+  532  ls -l
+  533  cd lib
+  534  ls -l
+  535  cd ..
+  536  ls -l
+  537  cd -
+  538  cd /root
+  539  ls -l
+  540  cd Verizon/Day1/
+  541  cd Ansible/
+  542  LS -L
+  543  ls -l
+  544  cp installnginx.yml installnginx1.yml 
+  545  vim installnginx1.yml 
+  546  vim myvariables 
+  547  ls -l
+  548  set -o vi
+  549  cp installnginx.yml installnginx1.yml 
+  550  vi installnginx1
+  551  vi installnginx1.yml 
+  552  ansible-playbook -i hosts ping.yml 
+  553  /curl
+  554* 
+ 555  /curl
+  556  set -o vi
+  557  clear
+  558  set -o vi
+  559  curl http://localhost:8000
+  560  curl http://localhost:8010
+  561  vim list.yml
+  562  ansible-playbook -i hosts list.yml 
+  563* 
+  564  cp list.yml dictionary_map.yml
+  565  vim dictionary_map.yml 
+  566  ansible-playbook -i hosts installvimandtree.yml 
+  567  clear
+  568  vim dictionary_map.yml 
+  569  ansible-playbook -i hosts dictionary_map.yml 
+  570  clear
+  571  ls -l
+  572  vi dictionary_map.yml 
+  573  history
+  574  vim 1_map.yml 
+  575  mv 1_map.yml loops.yml
+  576  clear
+  577  ansible-playbook -i hosts loops.yml 
+  578  vim loops.yml 
+  579  ansible-playbook -i hosts loops.yml 
+  580  vim loops.yml 
+  581  ansible-playbook -i hosts loops.yml 
+  582  vim loops.yml 
+  583  ansible-playbook -i hosts loops.yml 
+  584  vim loops.yml 
+  585  clear
+  586  vim start_containers.yml
+  587  ansible-doc docker_container
+  588  ansible-playbook -i hosts start_containers.yml 
+  589  ls -l
+  590  vi hosts 
+  591  apt install -y pip
+  592  yum install -y pip
+  593  vim start_containers.yml
+  594  yum install epel-release
+  595  yum install -y pip
+  596* 
+  597  yum install python-pip
+  598  pip install python-py
+  599  pip install docker-py
+  600  ansible-playbook -i hosts start_containers.yml 
+  601  history
+
+
+  
+     1  yum -y install openssh-server
+    2  # yum -y install openssh-server openssh-clients
+    3   chkconfig sshd on
+    4  service sshd start
+    5  netstat -tulpn | grep :22
+    6  vi /etc/sysconfig/iptables
+    7  http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    8  weget http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    9  exit
+   10  docker images
+   11  ls
+   12  ./dind-cluster-v1.8.sh stop
+   13  clear
+   14  ls
+   15  pwd
+   16  mkdir test
+   17  cd test
+   18  docker ps
+   19  exit
+   20  yum installl curl
+   21  yum install curl
+   22  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   23  chmod +x ./kubectl 
+   24  mv ./kubectl  /usr/local/bin/kubectl
+   25  kubectl get nodes
+   26  uname -a
+   27  which kubectl
+   28  kubectl get nodes
+   29  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   30  chmod +x ./kubectl 
+   31  mv ./kubectl  /usr/local/bin/kubectl
+   32  kubectl get nodes
+   33  ls
+   34  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   35  chmod +x ./kubectl 
+   36  kubectl get nodes
+   37  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   38  chmod +x ./kubectl 
+   39  kubectl get nodes
+   40  ./kubectl get nodes
+   41  mv ./kubectl  /usr/local/bin/kubectl
+   42  kubectl get nodes
+   43  kubectl get pods
+   44  kubectl get pods --all-namespaces
+   45  kubectl run nginx --image=nginx --replicas=4
+   46  kubectl get pods
+   47  kubectl get pods -w
+   48  ls
+   49  exit
+   50  yum install -y yum-utils device-mapper-persistent-data lvm2
+   51  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   52  yum install docker
+   53  yum install ansible
+   54  docker --version
+   55  ansible --version
+   56  docker run -it ubuntu /bin/bash
+   57  service enable docker
+   58  systemctl enable docker
+   59  systemctl start docker
+   60  docker run -it ubuntu bash
+   61  wget https://cdn.rawgit.Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   62  wget https://cdn.rawgit.com/Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   63  chmod +x dind-cluster-v1.8.sh 
+   64  ./dind-cluster-v1.8.sh up
+   65  docker --version
+   66  docker images
+   67  ./dind-cluster-v1.8.sh up
+   68  yum install docker-ce
+   69  yum remove docker.io
+   70  yum remove docker
+   71  yum install docker-ce
+   72  yum update
+   73  yum install docker-ce
+   74  yum remove docker-comon-2:1.13.1-53.git774336d.el7.centos.x86_64
+   75  yum remove docker-common-2:1.13.1-53.git774336d.el7.centos.x86_64
+   76  yum install docker-ce
+   77  docker --version
+   78  docker images
+   79  systemctl enable docker
+   80  systemctl start docker
+   81  docker images
+   82  ./dind-cluster-v1.8.sh up
+   83  kubectl get nodes
+   84  export PATH="\$HOME/.kubeadm-dind-cluster:$P" 
+   85  clear" 
+   86  clear
+   87  kubectl get pods
+   88  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   89  yum install curl
+   90  exit
+   91  service sshd start
+   92  service sshd restart
+   93  vi /etc/systemconfig/iptables
+   94  exit
+   95  clear
+   96  docker ps
+   97  docker rename ecstatic_bell Verizon1
+   98  ls -l
+   99  docker ps
+  100  docker ps -a
+  101  docker stop modest_turing 
+  102  docker commit --help
+  103  docker commit Verizon1 MyVeri
+  104  docker commit Verizon1 myimages
+  105  docker ps
+  106  ls -l
+  107  pwd
+  108  mkdir Verizon
+  109  cd Verizon/
+  110  mkdir Day1
+  111  cd Day1
+  112  vim CustomImage
+  113  docker build -t interes
+  114  docker build -t interest .
+  115  docker build -t Verizon2
+  116  mkdir CustomImage
+  117  mv CustomImage dockerfile
+  118  mkdir CustomImage
+  119  cd CustomImage/
+  120  cd..
+  121  cd ..
+  122  mv dockerfile CustomImage/dockerfile
+  123  cd CustomImage/
+  124  docker build -t Verizon2 .
+  125  docker build -t verizon2 .
+  126  vim dockerfile 
+  127  docker build -t verizon2 .
+  128  vim dockerfile 
+  129  docker build -t verizon2 .
+  130  docker images 
+  131  docker run -it verizon2 /bin/bash
+  132  docker pull mysql
+  133  docker run -it verizon2 /bin/bash
+  134  docker ps
+  135  docker inspect 53d4fb29bb65 grep IPA
+  136  docker inspect 53d4fb29bb65 | grep IPA
+  137  docker inspect 53d4fb29bb65
+  138  docker network create mynetwork --subnet 172.18.0.0/24
+  139  docker network ls
+  140  docker run -dit --name verizon3 --network=mynetwork ubuntu bash
+  141  docker inspect verizon3 | grep IPA
+  142  ifconfig
+  143  docker run -d --name nginx1 nginx
+  144  docker ps
+  145  docker inspect nginx | grep IPA
+  146  docker inspect nginx1 | grep IPA
+  147  curl http://172.17.0.3
+  148  docker run -d --name verizon3 -p 8000:80 nginx
+  149  docker run -d --name verizon4 -p 8000:80 nginx
+  150  docker ps
+  151  curl http://localhost:8000
+  152  ifconfig
+  153  docker rm -f verizon4
+  154  docker run -d --name verizon5 -p 8000:80 nginx
+  155  docker run -d --name verizon6 -p 8001:80 nginx
+  156  docker run -d --name verizon7 -p 8001:80 nginx
+  157  clear
+  158  history
+  159  pwd
+  160  cd ..
+  161  mkdir data
+  162  cd data
+  163  echo "MY application data" > data.txt
+  164  ls
+  165  cd ..
+  166  docker run -d --name verizon8 -v root/Verizon/Day1/date:/root/data nginx
+  167  docker run -d --name verizon8 -v root/Verizon/Day1/data:/root/data nginx
+  168  docker exec -it verizon8 bash
+  169  docker run -d --name verizon8 -v root/Verizon/Day1/data:/root/data nginx
+  170  pwd
+  171  docker run -d --name verizon8 -v /root/Verizon/Day1/data:/root/data nginx
+  172  docker exec -it verizon8 bash
+  173  exit
+  174  docker images
+  175  ansible --version
+  176  docker run hello-world
+  177  docker images
+  178  docker run hello-world
+  179  ps -aux | grep dockerd
+  180  docker info
+  181  cd /var/lib/docker
+  182  ls -l
+  183  cd image/
+  184  ls -l
+  185  cd overlay2/
+  186  cd imagedb/
+  187  ls -l
+  188  cd content/
+  189  ls -l
+  190  cd sha256/
+  191  ls -l
+  192  clear
+  193  docker ps
+  194  docker ps -a
+  195  docker run -it ubuntu /bin/bash
+  196  docker run -dit ubuntu /bin/bash
+  197  docker start Verizon1
+  198  docker ps
+  199  docker exec -it modest_turing /bin/bash
+  200  docker ps
+  201  docker stop modest_turing 
+  202  docker ps
+  203  docker exec -it modest_turing /bin/bash
+  204  docker start modest_turing 
+  205  docker exec -it modest_turing /bin/bash
+  206  docker inspect modest_turing 
+  207  history
+  208  clear
+  209  history
+  210  clear
+  211  docker images
+  212  docker rmi hello-world
+  213  docker ps -q
+  214  docker rm -f $(docker ps -q)
+  215  docker stop (docker ps -q) && docker rm $(docker ps -aq)
+  216  docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+  217  docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+  218  docker start $(docker ps -aq)
+  219  docker images
+  220  docker ps
+  221  docker run -dit --name Verizon1 ubuntu bash
+  222  docker exec -it Verizon1 bash
+  223  docker inspect ubuntu
+  224  docker exec -it Verizon1 bash
+  225  clear
+  226  pwd
+  227  cd /root/Verizon/
+  228  ls -l
+  229  cd Day1/
+  230  ls -l
+  231  cd data/
+  232  ls -l
+  233  vi data.txt 
+  234  ls -l
+  235  git clone https://github.com/tektutor/ubuntu-ansible.git
+  236  pwd
+  237  ls -l
+  238  mv ubuntu-ansible/ /root/Verizon/Day1
+  239  cd ..
+  240  ls -l
+  241  cd ubuntu-ansible/
+  242  ls -l
+  243  vi Dockerfile 
+  244  ssh-keygen
+  245  docker build -t verizon/ansible-ubuntu .
+  246  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  247  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  248  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  249  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  250  ssh -p 2003 root@localhost
+  251  ssh -p 2004 root@localhost
+  252  ssh -p 2002 root@localhost
+  253  clear
+  254  ls -l
+  255  history
+  256  ls -l
+  257  vi Dockerfile 
+  258  history
+  259  exitexit
+  260  xit
+  261  exit
+  262  cd Verizon/Day1/
+  263  cd ubuntu-ansible/
+  264  cp /root/.ssh/id_rsa.pub authorized_keys
+  265  ls -l
+  266  vi authorized_keys 
+  267  clear
+  268  exit
+  269  clear
+  270  ls -l
+  271  pwd
+  272  history
+  273  clear
+  274  docker ps
+  275  clear
+  276  docker ps -a
+  277  docker ps 
+  278  docker exec -it verizon6 /bin/bash
+  279  docker ps 
+  280  curl http://localhost:8000
+  281  ifconfig
+  282  clear
+  283  cd /root/Verizon/Day1/
+  284  ls 
+  285  cd AN
+  286  ansible-playbook -i hosts ping.yml
+  287  pwd
+  288  ls
+  289  cd Ansible/
+  290  ansible-playbook -i hosts ping.yml
+  291  cd ~
+  292  vim .vimrc
+  293  cd -
+  294  vi ping.yml 
+  295  vim ping.yml 
+  296  clear
+  297  -
+  298  cd -
+  299  vim .vimrc 
+  300  cd -
+  301  vim ping.yml 
+  302  cd -
+  303  vi .vimrc 
+  304  cd -
+  305  vim ping.yml 
+  306  cd -
+  307  vim .vimrc 
+  308  cd -
+  309  vim ping.yml 
+  310  ansible-playbook -i hosts ping.yml
+  311  vim ping.yml 
+  312  ansible-playbook -i hosts ping.yml
+  313  vim ping.yml 
+  314  ansible-playbook -i hosts ping.yml
+  315  vim ping.yml 
+  316  clear
+  317  ls-l
+  318  ls -l
+  319  vim ping.yml 
+  320  ls -l
+  321  vim ping.yml 
+  322  vim -r ping.yml 
+  323  vim ping.yml 
+  324  rm .ping.yml.swp
+  325  vim ping.yml 
+  326  ansible-playbook -i hosts ping.yml
+  327  vim ping.yml 
+  328  ansible-playbook -i hosts ping.yml
+  329  vim ping.yml 
+  330  ansible-playbook -i hosts ping.yml
+  331  vim ping.yml 
+  332  ansible-playbook -i hosts ping.yml
+  333  cd -
+  334  ls 
+  335  cd -
+  336  cd root
+  337  cd /root
+  338  vim .vimrc
+  339  cd -
+  340  vim ping.yml 
+  341  cd -
+  342  vim installvimandtree.yml
+  343  cd -
+  344  ls -l
+  345  vim .vimrc
+  346  cd -
+  347  vim installvimandtree.yml
+  348  cd /etc/apt
+  349  pwd
+  350  cd /root/etc
+  351  clear
+  352  cd /
+  353  pwd
+  354  ls -l
+  355  cd etc
+  356  cd apt
+  357  ls -l
+  358  cd yum
+  359  ls -l
+  360  exit
+  361  clear
+  362  cd /root/Verizon/Day1/
+  363  cd Ansible/
+  364  ls -l
+  365  clear
+  366  man apt-get
+  367  clear
+  368  vim installvimandtree.yml 
+  369  ansible-playbook -i hosts installvimandtree.yml
+  370  vim installvimandtree.yml 
+  371  ansible-playbook -i hosts installvimandtree.yml
+  372  vim installvimandtree.yml 
+  373  vim hosts 
+  374  ansible-playbook -i hosts installvimandtree.yml
+  375  docker exec -it ubuntu2 /bash
+  376  docker exec -it ubuntu2 /bin/bash
+  377  vim installvimandtree.
+  378  vim installvimandtree.yml 
+  379  ansible-playbook -i hosts installvimandtree.yml
+  380  clear
+  381  docker stop $(docker ps -aq)
+  382  docker rm $(docker ps -aq)
+  383   167  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  384    168  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  385  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  386  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  387  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  388  docker ps
+  389  ansible-playbook -i hosts installvimandtree.yml
+  390* 
+  391  ansible-playbook -i hosts installnginx.yml 
+  392  ansible-playbook -i hosts installvimandtree.yml 
+  393  history
+  394  vi installnginx.yml 
+  395  vim installnginx.yml 
+  396  vim index.html.j2 
+  397  clear
+  398  ls -l
+  399  rm installvimandtree.retry 
+  400  clear
+  401  vi installnginx.yml 
+  402  vim installnginx.yml 
+  403  ansible-playbook -i hosts installnginx.yml 
+  404  clear
+  405  ansible-playbook -i hosts installnginx.yml .
+  406  ansible-playbook -i hosts installnginx.yml 
+  407  ansible-playbook -i hosts installvimandtree.yml 
+  408  clear
+  409  ls -l
+  410  docker stop $(docker ps -aq)
+  411  docker rm $(docker ps -aq)
+  412  docker run 
+  413  docker run -d --name ubuntu10 -p 2010:22 -p 8010:80 verizon/ansible-ubuntu
+  414  ls -l
+  415  vim ping.yml 
+  416  ansible-playbook -i hosts ping.yml 
+  417  vi hosts 
+  418  ansible-playbook -i hosts ping.yml 
+  419  ansible-playbook -i hosts installvimandtree.yml 
+  420  vim installvimandtree.yml 
+  421  ansible-playbook -i hosts installvimandtree.yml 
+  422  history
+
+
+
+
+DAY 3
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 1  yum -y install openssh-server
+    2  # yum -y install openssh-server openssh-clients
+    3   chkconfig sshd on
+    4  service sshd start
+    5  netstat -tulpn | grep :22
+    6  vi /etc/sysconfig/iptables
+    7  http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    8  weget http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    9  exit
+   10  docker images
+   11  ls
+   12  ./dind-cluster-v1.8.sh stop
+   13  clear
+   14  ls
+   15  pwd
+   16  mkdir test
+   17  cd test
+   18  docker ps
+   19  exit
+   20  yum installl curl
+   21  yum install curl
+   22  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   23  chmod +x ./kubectl 
+   24  mv ./kubectl  /usr/local/bin/kubectl
+   25  kubectl get nodes
+   26  uname -a
+   27  which kubectl
+   28  kubectl get nodes
+   29  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   30  chmod +x ./kubectl 
+   31  mv ./kubectl  /usr/local/bin/kubectl
+   32  kubectl get nodes
+   33  ls
+   34  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   35  chmod +x ./kubectl 
+   36  kubectl get nodes
+   37  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   38  chmod +x ./kubectl 
+   39  kubectl get nodes
+   40  ./kubectl get nodes
+   41  mv ./kubectl  /usr/local/bin/kubectl
+   42  kubectl get nodes
+   43  kubectl get pods
+   44  kubectl get pods --all-namespaces
+   45  kubectl run nginx --image=nginx --replicas=4
+   46  kubectl get pods
+   47  kubectl get pods -w
+   48  ls
+   49  exit
+   50  yum install -y yum-utils device-mapper-persistent-data lvm2
+   51  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   52  yum install docker
+   53  yum install ansible
+   54  docker --version
+   55  ansible --version
+   56  docker run -it ubuntu /bin/bash
+   57  service enable docker
+   58  systemctl enable docker
+   59  systemctl start docker
+   60  docker run -it ubuntu bash
+   61  wget https://cdn.rawgit.Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   62  wget https://cdn.rawgit.com/Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   63  chmod +x dind-cluster-v1.8.sh 
+   64  ./dind-cluster-v1.8.sh up
+   65  docker --version
+   66  docker images
+   67  ./dind-cluster-v1.8.sh up
+   68  yum install docker-ce
+   69  yum remove docker.io
+   70  yum remove docker
+   71  yum install docker-ce
+   72  yum update
+   73  yum install docker-ce
+   74  yum remove docker-comon-2:1.13.1-53.git774336d.el7.centos.x86_64
+   75  yum remove docker-common-2:1.13.1-53.git774336d.el7.centos.x86_64
+   76  yum install docker-ce
+   77  docker --version
+   78  docker images
+   79  systemctl enable docker
+   80  systemctl start docker
+   81  docker images
+   82  ./dind-cluster-v1.8.sh up
+   83  kubectl get nodes
+   84  export PATH="\$HOME/.kubeadm-dind-cluster:$P" 
+   85  clear" 
+   86  clear
+   87  kubectl get pods
+   88  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   89  yum install curl
+   90  exit
+   91  service sshd start
+   92  service sshd restart
+   93  vi /etc/systemconfig/iptables
+   94  exit
+   95  clear
+   96  docker ps
+   97  docker rename ecstatic_bell Verizon1
+   98  ls -l
+   99  docker ps
+  100  docker ps -a
+  101  docker stop modest_turing 
+  102  docker commit --help
+  103  docker commit Verizon1 MyVeri
+  104  docker commit Verizon1 myimages
+  105  docker ps
+  106  ls -l
+  107  pwd
+  108  mkdir Verizon
+  109  cd Verizon/
+  110  mkdir Day1
+  111  cd Day1
+  112  vim CustomImage
+  113  docker build -t interes
+  114  docker build -t interest .
+  115  docker build -t Verizon2
+  116  mkdir CustomImage
+  117  mv CustomImage dockerfile
+  118  mkdir CustomImage
+  119  cd CustomImage/
+  120  cd..
+  121  cd ..
+  122  mv dockerfile CustomImage/dockerfile
+  123  cd CustomImage/
+  124  docker build -t Verizon2 .
+  125  docker build -t verizon2 .
+  126  vim dockerfile 
+  127  docker build -t verizon2 .
+  128  vim dockerfile 
+  129  docker build -t verizon2 .
+  130  docker images 
+  131  docker run -it verizon2 /bin/bash
+  132  docker pull mysql
+  133  docker run -it verizon2 /bin/bash
+  134  docker ps
+  135  docker inspect 53d4fb29bb65 grep IPA
+  136  docker inspect 53d4fb29bb65 | grep IPA
+  137  docker inspect 53d4fb29bb65
+  138  docker network create mynetwork --subnet 172.18.0.0/24
+  139  docker network ls
+  140  docker run -dit --name verizon3 --network=mynetwork ubuntu bash
+  141  docker inspect verizon3 | grep IPA
+  142  ifconfig
+  143  docker run -d --name nginx1 nginx
+  144  docker ps
+  145  docker inspect nginx | grep IPA
+  146  docker inspect nginx1 | grep IPA
+  147  curl http://172.17.0.3
+  148  docker run -d --name verizon3 -p 8000:80 nginx
+  149  docker run -d --name verizon4 -p 8000:80 nginx
+  150  docker ps
+  151  curl http://localhost:8000
+  152  ifconfig
+  153  docker rm -f verizon4
+  154  docker run -d --name verizon5 -p 8000:80 nginx
+  155  docker run -d --name verizon6 -p 8001:80 nginx
+  156  docker run -d --name verizon7 -p 8001:80 nginx
+  157  clear
+  158  history
+  159  pwd
+  160  cd ..
+  161  mkdir data
+  162  cd data
+  163  echo "MY application data" > data.txt
+  164  ls
+  165  cd ..
+  166  docker run -d --name verizon8 -v root/Verizon/Day1/date:/root/data nginx
+  167  docker run -d --name verizon8 -v root/Verizon/Day1/data:/root/data nginx
+  168  docker exec -it verizon8 bash
+  169  docker run -d --name verizon8 -v root/Verizon/Day1/data:/root/data nginx
+  170  pwd
+  171  docker run -d --name verizon8 -v /root/Verizon/Day1/data:/root/data nginx
+  172  docker exec -it verizon8 bash
+  173  exit
+  174  docker images
+  175  ansible --version
+  176  docker run hello-world
+  177  docker images
+  178  docker run hello-world
+  179  ps -aux | grep dockerd
+  180  docker info
+  181  cd /var/lib/docker
+  182  ls -l
+  183  cd image/
+  184  ls -l
+  185  cd overlay2/
+  186  cd imagedb/
+  187  ls -l
+  188  cd content/
+  189  ls -l
+  190  cd sha256/
+  191  ls -l
+  192  clear
+  193  docker ps
+  194  docker ps -a
+  195  docker run -it ubuntu /bin/bash
+  196  docker run -dit ubuntu /bin/bash
+  197  docker start Verizon1
+  198  docker ps
+  199  docker exec -it modest_turing /bin/bash
+  200  docker ps
+  201  docker stop modest_turing 
+  202  docker ps
+  203  docker exec -it modest_turing /bin/bash
+  204  docker start modest_turing 
+  205  docker exec -it modest_turing /bin/bash
+  206  docker inspect modest_turing 
+  207  history
+  208  clear
+  209  history
+  210  clear
+  211  docker images
+  212  docker rmi hello-world
+  213  docker ps -q
+  214  docker rm -f $(docker ps -q)
+  215  docker stop (docker ps -q) && docker rm $(docker ps -aq)
+  216  docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+  217  docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+  218  docker start $(docker ps -aq)
+  219  docker images
+  220  docker ps
+  221  docker run -dit --name Verizon1 ubuntu bash
+  222  docker exec -it Verizon1 bash
+  223  docker inspect ubuntu
+  224  docker exec -it Verizon1 bash
+  225  clear
+  226  pwd
+  227  cd /root/Verizon/
+  228  ls -l
+  229  cd Day1/
+  230  ls -l
+  231  cd data/
+  232  ls -l
+  233  vi data.txt 
+  234  ls -l
+  235  git clone https://github.com/tektutor/ubuntu-ansible.git
+  236  pwd
+  237  ls -l
+  238  mv ubuntu-ansible/ /root/Verizon/Day1
+  239  cd ..
+  240  ls -l
+  241  cd ubuntu-ansible/
+  242  ls -l
+  243  vi Dockerfile 
+  244  ssh-keygen
+  245  docker build -t verizon/ansible-ubuntu .
+  246  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  247  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  248  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  249  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  250  ssh -p 2003 root@localhost
+  251  ssh -p 2004 root@localhost
+  252  ssh -p 2002 root@localhost
+  253  clear
+  254  ls -l
+  255  history
+  256  ls -l
+  257  vi Dockerfile 
+  258  history
+  259  exitexit
+  260  xit
+  261  exit
+  262  cd Verizon/Day1/
+  263  cd ubuntu-ansible/
+  264  cp /root/.ssh/id_rsa.pub authorized_keys
+  265  ls -l
+  266  vi authorized_keys 
+  267  clear
+  268  exit
+  269  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  270  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  271  docker ps
+  272* docker ps -
+  273  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  274  clear
+  275  cd Verizon/
+  276  cd Day1/Ansible/
+  277  ls -l
+  278  ansible-playbook -i hosts ping.yml
+  279  vi hosts 
+  280  ansible-playbook -i hosts ping.yml
+  281  ls -l
+  282  ansible-playbook -i hosts installvimandtree.yml 
+  283  vim installnginx.yml 
+  284  vi installvimandtree.yml
+  285  ansible-playbook -i hosts installnginx.yml 
+  286  clear
+  287  vim installnginx.yml 
+  288  clear
+  289  docker exec -it ubuntu2 bash
+  290  clear
+  291  ls -l
+  292  docker cp ubuntu2://etc/nginx/sites-available
+  293  docker cp ubuntu2:/etc/nginx/sites-available/default default
+  294  clear
+  295  ls -l
+  296  vim installnginx.yml 
+  297  ansible-playbook -i hosts installnginx.yml 
+  298  vim installnginx.yml 
+  299  ls -l
+  300  vim installnginx.yml 
+  301  ansible-playbook -i hosts installnginx.yml 
+  302  vim installnginx1.yml 
+  303  ansible-playbook -i hosts installnginx1.yml 
+  304  ls -l
+  305  rm *.retry
+  306  ls -l
+  307  ansible-playbook -i hosts loops.yml 
+  308  vim loops.yml 
+  309  ls -l
+  310  vi index.html.j2 
+  311  curl -p 2002 root@localhost
+  312  curl http://root@localhost:2002
+  313  curl -p -2002 http://root@localhost
+  314  curl http://localhost:8002
+  315  curl http://localhost:8003
+  316  curl http://localhost:8004
+  317  clear
+  318  ls -l
+  319  pwd
+  320  cd ..
+  321  mkdir Day3
+  322  rename Day1 Day1_2
+  323  mv Day1 Day1_2
+  324  cd Day3
+  325  mkdir playbooks
+  326  cd playbooks/
+  327  vim 12
+  328  mv 12 hosts
+  329  clear
+  330  vim hosts 
+  331  cd -
+  332  cd /root/Verizon/Day1_2/Ansible/
+  333  ls -l
+  334  vi list.yml 
+  335  ansible-playbook -i hosts list.yml 
+  336  ansible-playbook -i hosts loops.yml 
+  337  clear
+  338  ls -l
+  339  vi start_containers.yml 
+  340  cd -
+  341  ansible -i hosts dev-servers -m ping
+  342  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  343  docker run -d --name ubuntu5 -p 2005:22 -p 8005:80 verizon/ansible-ubuntu
+  344  clear
+  345  ls -l
+  346  vi hosts 
+  347  ansible -i hosts dev-servers -m ping
+  348  ansible -i hosts prod-servers -m ping
+  349  ansible -i hosts qa-servers -m ping
+  350  clear
+  351  vim pretask
+  352  mv pretask preandposttasks.yml
+  353  vim preandposttasks.yml 
+  354  set -o vi
+  355  /ansible-pla
+  356  clear
+  357  ansible-doc pre_task
+  358  ansible-doc help
+  359  ansible-doc --help
+  360  ansible-doc -a
+  361  ansible-doc -all
+  362  clear
+  363  ansible-doc state
+  364  clear
+  365  vim preandposttasks.yml 
+  366  yum install epel-release
+  367  pip install docker-py
+  368  cd -
+  369  ansible-playbook -i hosts start_containers.yml
+  370  vim start_containers.yml 
+  371  clear
+  372  vim start_containers.yml 
+  373  clear
+  374  vim loops.yml 
+  375  ls -l
+  376  rm *.retry
+  377  clear
+  378  pwd
+  379  vim loops.yml 
+  380  ansible-playbook -i hosts loops.yml 
+  381  vim loops.yml 
+  382  ansible-playbook -i hosts loops.yml 
+  383  clear
+  384  ls -l
+  385  vim dictionary_map.yml 
+  386  ansible-playbook -i hosts dictionary_map.yml 
+  387  vim dictionary_map.yml 
+  388  ansible-playbook -i hosts dictionary_map.yml 
+  389  ansible-playbook -i hosts start_containers.yml 
+  390  vim start_containers.yml 
+  391  ansible-playbook -i hosts start_containers.yml 
+  392  vim start_containers.yml 
+  393  clear
+  394  cd -
+  395  ls -l
+  396  ansible-playbook -i hosts preandposttasks.yml 
+  397  cd -
+  398  vi start_containers.
+  399  rm start_containers.retry 
+  400  vim start_containers.yml 
+  401  clear
+  402  ls -l
+  403  vim default 
+  404  ansible-playbook -i hosts installnginx.yml 
+  405  ansible-playbook -i hosts installnginx1.yml 
+  406  docker exec -it ubuntu2 bash
+  407  clear
+  408  ls -l
+  409  vim installnginx1.yml 
+  410  ansible-playbook -i hosts installnginx1.yml 
+  411  clear
+  412  vim installnginx1.yml
+  413  vim installnginx1.yml 
+  414  cd -
+  415  pwd
+  416  clear
+  417  ls -l
+  418  mkdir AnsibleRecoDirStr
+  419  cd AnsibleRecoDirStr/
+  420  ls -l
+  421  mkdir host_vars
+  422  mkdir group_vars
+  423  vim hosts
+  424  touch host_vars/ubuntu1
+  425  touch host_vars/ubuntu2
+  426* touch host_vars/ubuntu4
+  427  touch host_vars/ubuntu2
+  428  touch host_vars/ubuntu4
+  429  touch host_vars/ubuntu5
+  430  tree
+  431  ls -l
+  432  echo "ansible_host: 2001" > host_vars/ubuntu1
+  433  echo "ansible_host: 2002" > host_vars/ubuntu2
+  434  echo "ansible_host: 2003" > host_vars/ubuntu3
+  435  echo "ansible_host: 2005" > host_vars/ubuntu5
+  436  echo "ansible_host: 2004" > host_vars/ubuntu4
+  437  cat hostvars/ubuntu1
+  438  cat host_vars/ubuntu1
+  439  vim hosts
+  440  echo "ansible_port: 2001" > host_vars/ubuntu1
+  441  echo "ansible_port: 2002" > host_vars/ubuntu1
+  442  echo "ansible_port: 2003" > host_vars/ubuntu1
+  443  echo "ansible_port: 2001" > host_vars/ubuntu1
+  444  echo "ansible_port: 2002" > host_vars/ubuntu2
+  445  echo "ansible_port: 2003" > host_vars/ubuntu3
+  446  echo "ansible_port: 2004" > host_vars/ubuntu4
+  447  echo "ansible_port: 2005" > host_vars/ubuntu5
+  448  cat host_vars/ubuntu1
+  449  clear
+  450  cd group_vars/
+  451  vim all
+  452  tree
+  453  ls -l
+  454  cd ..
+  455  ls -l
+  456  clear
+  457  ls -l
+  458  clear
+  459  cd -
+  460  cd /root/Verizon/Day1_2/Ansible/
+  461  LS -L
+  462* 
+  463  vim start_containers.yml 
+  464  docker ps
+  465  docker ps -a
+  466  clear
+  467  docker ps -a
+  468  vim start_containers.yml 
+  469  clear
+  470  ls -l
+  471  cd -
+  472  ls -l
+  473  ansible -i hosts all -m ping
+  474  cd group_vars/
+  475  ls -l
+  476  vi all
+  477  ansible -i hosts all -m ping
+  478  clear
+  479  cd ..
+  480  vim 123
+  481  mv 123 ansible.cfg
+  482  pwd
+  483  cd ..
+  484  cd AnsibleRecoDirStr/
+  485  mv ansible.cfg /root/Verizon/Day3/
+  486  cd ..
+  487  ls -l
+  488  pwd
+  489  cd ..
+  490  pwd
+  491  ls -l
+  492  mv ansible.cfg /root/Verizon/Day3/playbooks/
+  493  clear
+  494  cd playbooks/
+  495  ls -l
+  496  cat ansible.cfg 
+  497  ansible all -m ping
+  498  ansible -i hosts all -m ping
+  499  vim /etc/ansible/ansible.cfg 
+  500  cd /root/.ansible/tmp
+  501  ls -l
+  502  cd ansible-local-14525k3NsiF/
+  503  ls -l
+  504  vim /etc/ansible/ansible.cfg 
+  505  cd -
+  506  cd /root/Verizon/Day3/playbooks/
+  507  pwd
+  508  ls -l
+  509  ansible-playbook preandposttasks.yml 
+  510  vi ansible.cfg 
+  511  ansible-playbook preandposttasks.yml 
+  512  vi ansible.cfg 
+  513  ansible-playbook preandposttasks.yml 
+  514  ls -l
+  515  vi mylog.log 
+  516  docker ps
+  517  docker run -d --name ubuntu6 -p 2006:22 -p 8006:80 Verizon/ansible-ubuntu
+  518  docker run -d --name ubuntu6 -p 2006:22 -p 8006:80 verizon/ansible-ubuntu
+  519  vim hosts 
+  520  ansible-playbook preandposttasks.yml 
+  521  vim ansible.cfg 
+  522  clear
+  523  pwd
+  524  clear
+  525  git clone https://github.com/tektutor/centos-sshd-passwordless.git
+  526  cd centos-sshd-passwordless/
+  527  ls 
+  528  vim Dockerfile 
+  529  clear
+  530  cp /root/.ssh/id_rsa.pub authorized_keys
+  531  ls -l
+  532  docker build -t verizon/ansible-centos .
+  533  docker images
+  534  cp ../../../Day1_2/Ansible/start_containers.yml ..
+  535  cd ..
+  536  ls -l
+  537  vim start_containers.yml 
+  538  ansible-playbook start_containers.yml 
+  539  vim start_containers.yml 
+  540  ansible-playbook start_containers.yml 
+  541  docker ps
+  542  ls -l
+  543  vim start_containers.yml 
+  544  ansible-playbook start_containers.yml 
+  545  docker ps
+  546  docker rm -f ubuntu6 
+  547  docker ps
+  548  docker rm -f centos[3:5]
+  549  docker rm -f centos3 centos4 centos5
+  550  docker ps
+  551  docker run -t -name centos6 -p 3008:22 -p 9008:80 verizon/ansible-centos
+  552  docker run -t --name centos6 -p 3008:22 -p 9008:80 verizon/ansible-centos
+  553  docker run -d --name centos6 -p 3008:22 -p 9008:80 verizon/ansible-centos
+  554  docker run -d --name centos8 -p 3008:22 -p 9008:80 verizon/ansible-centos
+  555  docker run -d --name centos9 -p 3009:22 -p 9009:80 verizon/ansible-centos
+  556  docker rm -f centos8 centos9
+  557  docker ps
+  558  docker rm -f centos6
+  559  docker ps
+  560  clear
+  561  ls -l
+  562  cd centos-sshd-passwordless/
+  563  ls -l
+  564  vi authorized_keys 
+  565  ls -l
+  566  vi inventory 
+  567  vi ansible.cfg 
+  568  vi installapache.yml 
+  569  clear
+  570  ls -l
+  571  cd ..
+  572  ls -l
+  573  clear
+  574  ls -l
+  575  cd AnsibleRecoDirStr/
+  576  ls -l
+  577  cp ../ansible.cfg .
+  578  vim ansible.cfg 
+  579  ls -l
+  580  vim ansible.cfg 
+  581  rm .ansible.cfg.swp 
+  582  vim ansible.cfg 
+  583  clear
+  584  pwd
+  585  ls -l
+  586  ansible --version
+  587  yum update ansible
+  588  ansible --version
+  589  clear
+  590  ls -l
+  591  pwd
+  592* 
+  593  vim installnginx.yml
+  594  docker ps
+  595  vim installnginx.yml
+  596  set -o vi
+  597  ansible-playbook start_containers.yml 
+  598  ansible-playbook installnginx.yml 
+  599  pwd
+  600  ls
+  601  mv installnginx.yml ..
+  602  ls -l
+  603  rm installnginx.retry 
+  604  cd ..
+  605  pwd
+  606  ls -l
+  607  vi hosts 
+  608  mv installnginx.yml AnsibleRecoDirStr/
+  609  cd AnsibleRecoDirStr/
+  610  ls -l
+  611  vi hosts 
+  612  cp ../../
+  613  cp ../../../Day1_2/Ansible/default .
+  614  cp ../../../Day1_2/Ansible/index.html.j2 .
+  615  ls -l
+  616  vi host
+  617  vim hosts 
+  618  rm host_vars/ubuntu3
+  619  rm host_vars/ubuntu4
+  620  rm host_vars/ubuntu5
+  621  ansible ubuntu1 -m setup | grep distribution
+  622  ansible-playbook installnginx.yml 
+  623  clear
+  624  ls -
+  625  ls -l
+  626  vi installnginx.yml 
+  627  vim installnginx.yml 
+  628  ls -l
+  629  vim hosts 
+  630  cd host_vars/
+  631  ls -l
+  632  vi ubuntu1
+  633  vim centos1
+  634  cp centos1 centos2
+  635  cmp ubuntu1 centos1
+  636  clear
+  637  ls -l
+  638  cd ..
+  639  ls -l
+  640  vim installnginx.yml 
+  641  ansible-playbook installnginx.yml 
+  642  docker ps
+  643  ssh ubuntu1
+  644  docker ps
+  645  cd ..
+  646  ls -l
+  647  vim start_containers.yml 
+  648  rm start_containers.retry 
+  649  cd ..
+  650  ls -l
+  651  clear
+  652  cd playbooks/
+  653  ls -l
+  654  cd AnsibleRecoDirStr/
+  655  ls -l
+  656  docker ps
+  657  cd host_vars/
+  658  ls -l
+  659  cat ubuntu1
+  660  cd ..
+  661  ansible-playbook installnginx.yml
+  662  ls -l
+  663  vi hosts 
+  664  cd host_vars/
+  665  ls -l
+  666  cat ubuntu1
+  667  cat ubuntu2
+  668  cat centos1
+  669  cat centos2
+  670  vim centos2
+  671  cd ..
+  672  ls -l
+  673  cd group_vars/
+  674  cat all 
+  675  vim all
+  676  cat all 
+  677  ansible-playbook installnginx.yml
+  678  cd ..
+  679  ansible-playbook installnginx.yml
+  680  ansible ubuntu1 -m setup | grep distribution
+  681  ansible centos1 -m setup | grep distribution
+  682  ls -l
+  683  rm installnginx.retry 
+  684  vim installnginx.yml 
+  685  yum install open-sshserver
+  686  ifconfig
+  687  clear
+  688  ls -l
+  689  yum install openssh-server
+  690  ifconfig
+  691  ssh trainer@192.168.1.149
+  692  clear
+  693  pwd
+  694  ansible all -m ping
+  695  yum install tree
+  696  vim ansible.cfg 
+  697  vim /etc/ansible/ansible.cfg 
+  698  vim installnginx.yml 
+  699  ansible-playbook installnginx.yml 
+  700  vim installnginx.
+  701  vim installnginx.yml 
+  702  ansible-playbook installnginx.yml 
+  703  clear
+  704  vim installnginx.yml 
+  705  ansible centos1 -m setup | grep distribution
+  706  docker cp centos1://etc/nginx/conf.d/default.conf .
+  707  vim installnginx.yml 
+  708  ansible centos1 -m setup | grep distribution
+  709  vim installnginx.yml 
+  710  ansible-playbook installnginx.yml 
+  711  docker cp centos1://etc/nginx/conf.d/default.conf .
+  712  pwd
+  713  ls -l
+  714  ansible-playbook installnginx.yml 
+  715  vim default
+  716  docker ps
+  717  curl http://localhost:8001
+  718  curl http://localhost:8002
+  719  curl http://localhost:9002
+  720  curl http://localhost:9001
+  721  vim hosts 
+  722  ls -l
+  723  vim ansible.cfg 
+  724  cd /etc/
+  725  ls -l
+  726  cd ansible/
+  727  ls -l
+  728  vi ansible.cfg 
+  729  vim ansible.cfg 
+  730  cd -
+  731  cd ..
+  732  cd /root/Verizon/Day3/
+  733  ls -l
+  734  cd playbooks/
+  735  ls -l
+  736  cd AnsibleRecoDirStr/
+  737  ls -l
+  738  vim ansible.cfg 
+  739  ansible-playbook installnginx.yml 
+  740  clear
+  741  ls -l
+  742  vi default
+  743  vim default.conf 
+  744  ansible-playbook installnginx.yml 
+  745  curl http://localhost:9002
+  746  curl http://localhost:9001
+  747  vim installnginx.yml 
+  748  vim default.conf 
+  749  ansible-playbook installnginx.yml 
+  750  curl http://localhost:9002
+  751  vim installnginx.yml 
+  752  vim default.conf 
+  753  ansible-playbook installnginx.yml 
+  754  ssh root@ubuntu1
+  755  ssh root@localhost:8001
+  756  ssh -p 22 localhost:8001
+  757  clear
+  758  docker -exec -it ubuntu bash
+  759  docker exec -it ubuntu bash
+  760  docker exec -it ubuntu1 bash
+  761  docker exec -it centos1 bash
+  762  docker exec -it ubuntu1 bash
+  763  clear
+  764  ifconfig
+  765  curl http://localhost:9002
+  766  curl http://localhost:9001
+  767  curl http://localhost:8001
+  768  curl http://localhost:8002
+  769  clear
+  770  echo "# PublicPrakash" >> README.md
+  771  git init
+  772  git add README.md
+  773  git commit -m "first commit"
+  774  git remote add origin https://github.com/PrakashSundararaman/PublicPrakash.git
+  775  git push -u origin master
+  776  pwd
+  777  ls -l
+  778  clear
+  779  vim html1
+  780  ls =l
+  781  ls -l
+  782  cd ../../../Day1/
+  783  cd ../../../Day1_2/Ansible/
+  784  ls -l
+  785  vim index.html.j2 
+  786  clear
+  787  pwd
+  788  cd ../../Day3/playbooks/AnsibleRecoDirStr/
+  789  vim contact.yml
+  790  ansible-vault encrypt contact.yml 
+  791  cat contact.yml 
+  792  vim contact.yml 
+  793  cat contact.yml 
+  794  ansible-vault edit contact.yml 
+  795  praka
+  796  ansible-vault edit contact.yml 
+  797  rm contact.yml 
+  798  ansible-vault create contact.yml
+  799  cat contact.yml 
+  800  ansible-vault edit contact.yml 
+  801  vim vault.yml
+  802  ansible-vault edit contact.yml 
+  803  vim vault.yml
+  804  vim contact.yml 
+  805  ansible-playbook vault.yml 
+  806  vim vault.yml 
+  807  ansible-playbook vault.yml 
+  808  ansible-playbook vault.yml --ask-vault-pass
+  809  vim vault.yml 
+  810  ansible-playbook vault.yml --ask-vault-pass
+  811  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  812  clear
+  813  ls -l
+  814  cd git_pull
+  815  mkdir git_pull
+  816  git pull https://github.com/PrakashSundararaman/PublicPrakash.git
+  817  vim 123.txtg https://github.com/PrakashSundararaman/PublicPrakash.git
+  818  pwd
+  819  ls 
+  820  cd git_pull/
+  821  git pull https://github.com/PrakashSundararaman/PublicPrakash.git
+  822  ls -l
+  823  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  824  pwd
+  825  ls -l
+  826  vim 123.txt
+  827  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  828  cd ..
+  829  pwd
+  830  ls -l
+  831  clear
+  832  ls -l
+  833  vim ansible.cfg 
+  834  vim .secrets
+  835  ls 
+  836  ls -lha
+  837  clear
+  838  ansible-playbook vault.yml --ask-vault-pass
+  839  ansible-playbook vault.yml
+  840  ls -lha
+  841  cd .git
+  842  ls -l
+  843  cd ..
+  844  pwd
+  845  ls -l
+  846  pwd
+  847  clear
+  848  history
+
+
+
+DAY 4
+
+   1  yum -y install openssh-server
+    2  # yum -y install openssh-server openssh-clients
+    3   chkconfig sshd on
+    4  service sshd start
+    5  netstat -tulpn | grep :22
+    6  vi /etc/sysconfig/iptables
+    7  http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    8  weget http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    9  exit
+   10  docker images
+   11  ls
+   12  ./dind-cluster-v1.8.sh stop
+   13  clear
+   14  ls
+   15  pwd
+   16  mkdir test
+   17  cd test
+   18  docker ps
+   19  exit
+   20  yum installl curl
+   21  yum install curl
+   22  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   23  chmod +x ./kubectl 
+   24  mv ./kubectl  /usr/local/bin/kubectl
+   25  kubectl get nodes
+   26  uname -a
+   27  which kubectl
+   28  kubectl get nodes
+   29  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   30  chmod +x ./kubectl 
+   31  mv ./kubectl  /usr/local/bin/kubectl
+   32  kubectl get nodes
+   33  ls
+   34  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   35  chmod +x ./kubectl 
+   36  kubectl get nodes
+   37  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   38  chmod +x ./kubectl 
+   39  kubectl get nodes
+   40  ./kubectl get nodes
+   41  mv ./kubectl  /usr/local/bin/kubectl
+   42  kubectl get nodes
+   43  kubectl get pods
+   44  kubectl get pods --all-namespaces
+   45  kubectl run nginx --image=nginx --replicas=4
+   46  kubectl get pods
+   47  kubectl get pods -w
+   48  ls
+   49  exit
+   50  yum install -y yum-utils device-mapper-persistent-data lvm2
+   51  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   52  yum install docker
+   53  yum install ansible
+   54  docker --version
+   55  ansible --version
+   56  docker run -it ubuntu /bin/bash
+   57  service enable docker
+   58  systemctl enable docker
+   59  systemctl start docker
+   60  docker run -it ubuntu bash
+   61  wget https://cdn.rawgit.Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   62  wget https://cdn.rawgit.com/Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   63  chmod +x dind-cluster-v1.8.sh 
+   64  ./dind-cluster-v1.8.sh up
+   65  docker --version
+   66  docker images
+   67  ./dind-cluster-v1.8.sh up
+   68  yum install docker-ce
+   69  yum remove docker.io
+   70  yum remove docker
+   71  yum install docker-ce
+   72  yum update
+   73  yum install docker-ce
+   74  yum remove docker-comon-2:1.13.1-53.git774336d.el7.centos.x86_64
+   75  yum remove docker-common-2:1.13.1-53.git774336d.el7.centos.x86_64
+   76  yum install docker-ce
+   77  docker --version
+   78  docker images
+   79  systemctl enable docker
+   80  systemctl start docker
+   81  docker images
+   82  ./dind-cluster-v1.8.sh up
+   83  kubectl get nodes
+   84  export PATH="\$HOME/.kubeadm-dind-cluster:$P" 
+   85  clear" 
+   86  clear
+   87  kubectl get pods
+   88  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   89  yum install curl
+   90  exit
+   91  service sshd start
+   92  service sshd restart
+   93  vi /etc/systemconfig/iptables
+   94  exit
+   95  clear
+   96  docker ps
+   97  docker rename ecstatic_bell Verizon1
+   98  ls -l
+   99  docker ps
+  100  docker ps -a
+  101  docker stop modest_turing 
+  102  docker commit --help
+  103  docker commit Verizon1 MyVeri
+  104  docker commit Verizon1 myimages
+  105  docker ps
+  106  ls -l
+  107  pwd
+  108  mkdir Verizon
+  109  cd Verizon/
+  110  mkdir Day1
+  111  cd Day1
+  112  vim CustomImage
+  113  docker build -t interes
+  114  docker build -t interest .
+  115  docker build -t Verizon2
+  116  mkdir CustomImage
+  117  mv CustomImage dockerfile
+  118  mkdir CustomImage
+  119  cd CustomImage/
+  120  cd..
+  121  cd ..
+  122  mv dockerfile CustomImage/dockerfile
+  123  cd CustomImage/
+  124  docker build -t Verizon2 .
+  125  docker build -t verizon2 .
+  126  vim dockerfile 
+  127  docker build -t verizon2 .
+  128  vim dockerfile 
+  129  docker build -t verizon2 .
+  130  docker images 
+  131  docker run -it verizon2 /bin/bash
+  132  docker pull mysql
+  133  docker run -it verizon2 /bin/bash
+  134  docker ps
+  135  docker inspect 53d4fb29bb65 grep IPA
+  136  docker inspect 53d4fb29bb65 | grep IPA
+  137  docker inspect 53d4fb29bb65
+  138  docker network create mynetwork --subnet 172.18.0.0/24
+  139  docker network ls
+  140  docker run -dit --name verizon3 --network=mynetwork ubuntu bash
+  141  docker inspect verizon3 | grep IPA
+  142  ifconfig
+  143  docker run -d --name nginx1 nginx
+  144  docker ps
+  145  docker inspect nginx | grep IPA
+  146  docker inspect nginx1 | grep IPA
+  147  curl http://172.17.0.3
+  148  docker run -d --name verizon3 -p 8000:80 nginx
+  149  docker run -d --name verizon4 -p 8000:80 nginx
+  150  docker ps
+  151  curl http://localhost:8000
+  152  ifconfig
+  153  docker rm -f verizon4
+  154  docker run -d --name verizon5 -p 8000:80 nginx
+  155  docker run -d --name verizon6 -p 8001:80 nginx
+  156  docker run -d --name verizon7 -p 8001:80 nginx
+  157  clear
+  158  history
+  159  pwd
+  160  cd ..
+  161  mkdir data
+  162  cd data
+  163  echo "MY application data" > data.txt
+  164  ls
+  165  cd ..
+  166  docker run -d --name verizon8 -v root/Verizon/Day1/date:/root/data nginx
+  167  docker run -d --name verizon8 -v root/Verizon/Day1/data:/root/data nginx
+  168  docker exec -it verizon8 bash
+  169  docker run -d --name verizon8 -v root/Verizon/Day1/data:/root/data nginx
+  170  pwd
+  171  docker run -d --name verizon8 -v /root/Verizon/Day1/data:/root/data nginx
+  172  docker exec -it verizon8 bash
+  173  exit
+  174  docker images
+  175  ansible --version
+  176  docker run hello-world
+  177  docker images
+  178  docker run hello-world
+  179  ps -aux | grep dockerd
+  180  docker info
+  181  cd /var/lib/docker
+  182  ls -l
+  183  cd image/
+  184  ls -l
+  185  cd overlay2/
+  186  cd imagedb/
+  187  ls -l
+  188  cd content/
+  189  ls -l
+  190  cd sha256/
+  191  ls -l
+  192  clear
+  193  docker ps
+  194  docker ps -a
+  195  docker run -it ubuntu /bin/bash
+  196  docker run -dit ubuntu /bin/bash
+  197  docker start Verizon1
+  198  docker ps
+  199  docker exec -it modest_turing /bin/bash
+  200  docker ps
+  201  docker stop modest_turing 
+  202  docker ps
+  203  docker exec -it modest_turing /bin/bash
+  204  docker start modest_turing 
+  205  docker exec -it modest_turing /bin/bash
+  206  docker inspect modest_turing 
+  207  history
+  208  clear
+  209  history
+  210  clear
+  211  docker images
+  212  docker rmi hello-world
+  213  docker ps -q
+  214  docker rm -f $(docker ps -q)
+  215  docker stop (docker ps -q) && docker rm $(docker ps -aq)
+  216  docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+  217  docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+  218  docker start $(docker ps -aq)
+  219  docker images
+  220  docker ps
+  221  docker run -dit --name Verizon1 ubuntu bash
+  222  docker exec -it Verizon1 bash
+  223  docker inspect ubuntu
+  224  docker exec -it Verizon1 bash
+  225  clear
+  226  pwd
+  227  cd /root/Verizon/
+  228  ls -l
+  229  cd Day1/
+  230  ls -l
+  231  cd data/
+  232  ls -l
+  233  vi data.txt 
+  234  ls -l
+  235  git clone https://github.com/tektutor/ubuntu-ansible.git
+  236  pwd
+  237  ls -l
+  238  mv ubuntu-ansible/ /root/Verizon/Day1
+  239  cd ..
+  240  ls -l
+  241  cd ubuntu-ansible/
+  242  ls -l
+  243  vi Dockerfile 
+  244  ssh-keygen
+  245  docker build -t verizon/ansible-ubuntu .
+  246  docker run -d --name ubuntu3 -p 2003:22 -p 8003:80 verizon/ansible-ubuntu
+  247  docker run -d --name ubuntu2 -p 2002:22 -p 8002:80 verizon/ansible-ubuntu
+  248  docker run -d --name ubuntu1 -p 2001:22 -p 8001:80 verizon/ansible-ubuntu
+  249  docker run -d --name ubuntu4 -p 2004:22 -p 8004:80 verizon/ansible-ubuntu
+  250  ssh -p 2003 root@localhost
+  251  ssh -p 2004 root@localhost
+  252  ssh -p 2002 root@localhost
+  253  clear
+  254  ls -l
+  255  history
+  256  ls -l
+  257  vi Dockerfile 
+  258  history
+  259  exitexit
+  260  xit
+  261  exit
+  262  cd Verizon/Day1/
+  263  cd ubuntu-ansible/
+  264  cp /root/.ssh/id_rsa.pub authorized_keys
+  265  ls -l
+  266  vi authorized_keys 
+  267  clear
+  268  exit
+  269  ls -l
+  270  cd Verizon/
+  271  ls -l
+  272  exit
+  273  clear
+  274  ls
+  275  cd Verizon/
+  276  ls
+  277  cd Day3
+  278  ls
+  279  cd playbooks/
+  280  ls
+  281  cd AnsibleRecoDirStr/
+  282  ls
+  283  clear
+  284  ls
+  285  docker ps
+  286  vim hosts
+  287  cat host_vars/ubuntu1
+  288  cat host_vars/ubuntu2
+  289  cat host_vars/centos12
+  290  cat host_vars/centos1
+  291  cat host_vars/centos2
+  292  clear
+  293  cat group_vars/all 
+  294  ls
+  295  ansible all -m ping
+  296  ansible-playbook installnginx.yml 
+  297  docker ps
+  298  curl http://localhost:8001
+  299  curl http://localhost:8002
+  300  curl http://localhost:9001
+  301  curl http://localhost:9002
+  302  vim installnginx.yml 
+  303  ansible-playbook installnginx.yml 
+  304  curl http://localhost:9002
+  305  curl http://localhost:8001
+  306  curl http://localhost:8002
+  307  curl http://localhost:9001
+  308  ls
+  309  vim installnginx.yml 
+  310  ansible centos1 -m shell -a "service nginx status"
+  311  ansible centos2 -m shell -a "service nginx status"
+  312  ansible centos2 -m shell -a "service nginx restart"
+  313  ansible centos1 -m shell -a "service nginx restart"
+  314  ansible centos1 -m shell -a "service nginx status"
+  315  ansible centos2 -m shell -a "service nginx status"
+  316  curl http://localhost:9001
+  317  curl http://localhost:9002
+  318  vim installnginx.yml 
+  319  clear
+  320  docker rm -f centos1 centos2
+  321  docker run -d --name centos1 -p 3001:22 -p 9001:80 verizon/ansible-centos
+  322  docker run -d --name centos2 -p 3002:22 -p 9002:80 verizon/ansible-centos
+  323  ansible-playbook installnginx.yml 
+  324  curl http://localhost:9001
+  325  curl http://localhost:9002
+  326  exit
+  327  cd Verizon/
+  328  ls -l
+  329  mkdir Day4
+  330  cd Day4
+  331  ansible-galaxy init nginx --offline
+  332  ls
+  333  tree
+  334  cd nginx/
+  335  cat handlers/main.yml 
+  336  cat vars/main.yml 
+  337  cat tasks/main.yml 
+  338  cat tests/test.yml 
+  339  cat tests/inventory 
+  340  clear
+  341  vim defaults/main.yml 
+  342  pwd
+  343  cd ../../Day3/playbooks/AnsibleRecoDirStr/default* files/
+  344  cp ../../Day3/playbooks/AnsibleRecoDirStr/default* files/
+  345  cd files/
+  346  ls -l
+  347  vi default
+  348  clear
+  349  pwd
+  350  cd ..
+  351  clear
+  352  cp ../../Day3/playbooks/AnsibleRecoDirStr/index.html.j2 templates/
+  353  tree
+  354  cat templates/index.html.j2 
+  355  clear
+  356  cd /
+  357  ls -l
+  358  cd /root
+  359  cd Verizon/
+  360  git clone https://github.com/tektutor/DevOpsChennaiJuly2018.git
+  361  cd DevOpsChennaiJuly2018/
+  362  ls -l
+  363  clear
+  364  pwd
+  365  ls -l
+  366  cd ..
+  367  pwd
+  368  ls
+  369  cd Day_4
+  370  cd Day4
+  371  ls -l
+  372  cd nginx/
+  373  ls -l
+  374  git clone https://github.com/PrakashSundararaman/PublicPrakash.git
+  375  ls -l
+  376  cd PublicPrakash/
+  377  ls -l
+  378  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  379  pwd
+  380  ls -l
+  381  cp -r /root/Verizon/Day1 .
+  382  cp -r /root/Verizon/Day1_2 .
+  383  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  384  git commit https://github.com/PrakashSundararaman/PublicPrakash.git
+  385  git commit 
+  386  git committ origin master
+  387  git commit origin master
+  388  git commit master
+  389  git add Day1_2
+  390  git commit Day1_2/
+  391  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  392  ls 
+  393  cp -r /root/Verizon/Day3 .
+  394  cp -r /root/Verizon/Day4 .
+  395  cd ..
+  396  mv -r PublicPrakash/ /root/Verizon/
+  397  mv PublicPrakash/ /root/Verizon/
+  398  cd /root/Verizon/PublicPrakash/
+  399  ls -l
+  400  cd /root/Verizon/Day4
+  401  ls -l
+  402  cd nginx/
+  403  cd tasks/
+  404  vim main.yml 
+  405  cd -
+  406  cd tasks/
+  407  ls 
+  408  cd /root/Verizon/
+  409  ls-l
+  410  ls -l
+  411  cd Day4
+  412  ls -l
+  413  cd nginx/
+  414  ls -l
+  415  git add Day3
+  416  cd ..
+  417  ls -l
+  418  cd ..
+  419  ls -l
+  420  cd PublicPrakash/
+  421  ls -l
+  422  git add Day3
+  423  git commit Day3
+  424  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  425  clear
+  426  cd ..
+  427  cd Day4
+  428  cd nginx/
+  429  tree
+  430  cd tasks/
+  431  cp /root/Verizon/Day3/playbooks/AnsibleRecoDirStr/installnginx.yml .
+  432  mv installnginx.yml install.yml
+  433  vim install.yml 
+  434  ls 
+  435  cp /root/Verizon/Day3/playbooks/AnsibleRecoDirStr/installnginx.yml .
+  436  mv installnginx.yml configure.yml
+  437  vim configure.yml 
+  438  tree
+  439  vim main.yml 
+  440  cp /root/Verizon/Day3/playbooks/AnsibleRecoDirStr/installnginx.yml .
+  441  mv installnginx.yml deploy.yml
+  442  vim deploy.yml 
+  443  ls -l
+  444  ls -ltr
+  445  vim deploy.yml 
+  446  rm .deploy.yml.swp 
+  447  clear
+  448  ls -l
+  449  vim deploy.yml 
+  450  cd ..
+  451  ls -l
+  452  cd handlers/
+  453  ls 
+  454  vim main.yml 
+  455  cp /root/Verizon/Day3/playbooks/AnsibleRecoDirStr/installnginx.yml .
+  456  vim installnginx.yml 
+  457  rm installnginx.yml 
+  458  clear
+  459  cd ..
+  460  cd tasks/
+  461  tree
+  462  vim deploy.yml 
+  463  vim configure.yml 
+  464  cd ../handlers/
+  465  cp /root/Verizon/Day3/playbooks/AnsibleRecoDirStr/installnginx.yml .
+  466  vim installnginx.yml 
+  467  vim main.yml 
+  468  vim ../meta/main.yml 
+  469  ls -l
+  470  cd ..
+  471  ls -l
+  472  cd ..
+  473  ls -l
+  474  vim invoke_custom_role.yml
+  475  ls -l
+  476  vim hosts
+  477  ansible-playbook invoke_custom_role.yml 
+  478  ls 
+  479  cd nginx/
+  480  ls -l
+  481  cd ..
+  482  ls -l
+  483  vim hosts 
+  484  ansible-playbook -i hosts\ invoke_custom_role.yml 
+  485  ansible-playbook -i hosts invoke_custom_role.yml 
+  486  vim hosts 
+  487  ansible-playbook -i hosts all invoke_custom_role.yml 
+  488  ansible-playbook invoke_custom_role.yml 
+  489  ansible-playbook -i hosts invoke_custom_role.yml 
+  490  vim hosts 
+  491  ansible-playbook -i hosts invoke_custom_role.yml 
+  492  cd ../Day3/playbooks/AnsibleRecoDirStr/
+  493  ls 
+  494  vi hosts 
+  495  cd -
+  496  ansible-playbook -i hosts invoke_custom_role.yml 
+  497  vim ../Day1_2/Ansible/hosts 
+  498  cd -
+  499  pwd
+  500  cd -
+  501  vim hosts
+  502  ansible-playbook -i hosts invoke_custom_role.yml 
+  503  vim nginx/meta/main.yml 
+  504  vim invoke_custom_role.yml 
+  505  cp ../Day3/playbooks/start_containers.yml .
+  506  ls -l
+  507  vim start_containers.yml 
+  508  vim invoke_custom_role.yml 
+  509  vim start_containers.yml 
+  510  vim invoke_custom_role.yml 
+  511  vim remove_all_containers.yml
+  512  vim invoke_custom_role.yml 
+  513  ansible-playbook -i hosts invoke_custom_role.yml 
+  514  vim invoke_custom_role.yml 
+  515  ansible-playbook -i hosts invoke_custom_role.yml 
+  516  vim nginx/meta//main.yml 
+  517  ansible-playbook -i hosts invoke_custom_role.yml 
+  518  vim invoke_custom_role.yml 
+  519  vim start_containers.yml 
+  520  ansible-playbook -i hosts invoke_custom_role.yml 
+  521  docker rm -f $(docker ps -aq)
+  522  ansible-playbook -i hosts invoke_custom_role.yml 
+  523  docker ps
+  524  pwd
+  525  ls
+  526  rm invoke_custom_role.retry 
+  527  cd nginx/
+  528  ls -l
+  529  cd defaults/
+  530  ls -l
+  531  vim main.yml 
+  532  clear
+  533  cd..
+  534  cd ..
+  535  vim invoke_custom_role.yml 
+  536  vim start_containers.yml 
+  537  ansible-playbook start_containers.yml 
+  538  vim start_containers.yml 
+  539  ansible-playbook start_containers.yml 
+  540  ansible-playbook -i hosts invoke_custom_role.yml 
+  541  ansible-playbook -i hosts start_containers.yml 
+  542  ansible-playbook start_containers.yml 
+  543  vim start_containers.yml 
+  544  ansible-playbook -i hosts start_containers.yml 
+  545  ansible-playbook start_containers.yml 
+  546  vim invoke_custom_role.yml 
+  547  vim start_containers.yml 
+  548  ansible-playbook -i hosts start_containers.yml 
+  549  vim start_containers.yml 
+  550  vim invoke_custom_role.yml 
+  551  vim start_containers.yml 
+  552  vim invoke_custom_role.yml 
+  553  vim test_nginx_containers.yml 
+  554  ansible-playbook -i hosts start_containers.yml 
+  555  ansible-playbook -i hosts invoke_custom_role.yml 
+  556  clear
+  557  vim start_containers.yml 
+  558  ansible-playbook -i hosts invoke_custom_role.yml 
+  559  clear
+  560  vim start_containers.yml 
+  561  clear
+  562  ls -l
+  563  ansible-playbook -i hosts invoke_custom_role.yml 
+  564  vim invoke_custom_role.yml 
+  565  vim start_containers.yml 
+  566  ansible-playbook -i hosts invoke_custom_role.yml 
+  567  vim start_containers.yml 
+  568  ansible-playbook -i hosts invoke_custom_role.yml 
+  569  vim start_containers.yml 
+  570  docker ps
+  571  vim start_containers.yml 
+  572  ansible-playbook -i hosts invoke_custom_role.yml 
+  573  vim start_containers.yml 
+  574  ansible-playbook -i hosts invoke_custom_role.yml 
+  575  vim start_containers.yml 
+  576  vim invoke_custom_role.yml 
+  577  vim test_nginx_containers.yml 
+  578  vim remove_all_containers.yml 
+  579  clear
+  580  mkdir JEGAN
+  581  ls -l
+  582  cd JEGAN
+  583  git clone https://github.com/tektutor/DevOpsChennaiJuly2018.git
+  584  cd Day4
+  585  ls -l
+  586  cd DevOpsChennaiJuly2018/
+  587  cd Day4/
+  588  ls -l
+  589  cmp remove_all_containers.yml /root/Verizon/Day4/remove_all_containers.yml 
+  590  cat remove_all_containers.yml 
+  591  cat /root/Verizon/Day4/remove_all_containers.yml 
+  592  vim /root/Verizon/Day4/remove_all_containers.yml 
+  593  cmp manage_containers.yml /root/Verizon/Day4/start_containers.yml 
+  594  cat manage_containers.yml 
+  595  cat /root/Verizon/Day4/start_containers.yml 
+  596  vim /root/Verizon/Day4/start_containers.yml 
+  597  cd /root/Verizon/Day4/
+  598  pwd
+  599  ansible-playbook -i hosts invoke_custom_role.yml
+  600  vim remove_all_containers.yml 
+  601  ansible-playbook -i hosts invoke_custom_role.yml
+  602  vim remove_all_containers.yml 
+  603  ansible-playbook -i hosts invoke_custom_role.yml
+  604  vim remove_all_containers.yml 
+  605  vim invoke_custom_role.yml 
+  606  ansible-playbook -i hosts invoke_custom_role.yml
+  607  clear
+  608  cp start_containers.yml start_containers1.yml 
+  609  cd -
+  610  mv manage_containers.yml /root/Verizon/Day4/
+  611  cp /root/Verizon/Day4/manage_containers.yml .
+  612  cd -
+  613  mv manage_containers.yml start_containers.yml 
+  614  ansible-playbook -i hosts invoke_custom_role.yml
+  615  clear
+  616  vim start_containers.yml 
+  617  ansible-playbook -i hosts invoke_custom_role.yml
+  618  clear
+  619  pwd
+  620  ls -l
+  621  cd JEGAN/
+  622  ls -l
+  623  cd DevOpsChennaiJuly2018/
+  624  LS -L
+  625  ls -l
+  626  cd Day4
+  627  ls -l
+  628  cp ansible.cfg /root/Verizon/Day4/
+  629  clear
+  630  pwd
+  631  cd ../../..
+  632  ls -l
+  633  ansible-playbook -i hosts invoke_custom_role.yml 
+  634  clear
+  635  ls -l
+  636  cd -
+  637  mv invoke_custom_role.yml invoke_custom_role1.yml
+  638  cd .
+  639  pwd
+  640  cd -
+  641  pwd
+  642  cp /root/Verizon/Day4/JEGAN/DevOpsChennaiJuly2018/Day4
+  643  cp /root/Verizon/Day4/JEGAN/DevOpsChennaiJuly2018/Day4/invoke_custom_role.yml .
+  644  vim invoke_custom_role.yml 
+  645  mv test_nginx_containers.yml test_nginx_containers1.yml
+  646  cp /root/Verizon/Day4/JEGAN/DevOpsChennaiJuly2018/Day4/test_nginx_containers.yml .
+  647  mv hosts hosts1
+  648  cp /root/Verizon/Day4/JEGAN/DevOpsChennaiJuly2018/Day4/hosts .
+  649  mv nginx nginx1
+  650  cp /root/Verizon/Day4/JEGAN/DevOpsChennaiJuly2018/Day4/nginx .
+  651  cp -r /root/Verizon/Day4/JEGAN/DevOpsChennaiJuly2018/Day4/nginx .
+  652  clear
+  653  ls -l
+  654  ansible-playbook -i hosts invoke_custom_role.yml 
+  655  vi invoke_custom_role.yml 
+  656  ansible-playbook -i hosts invoke_custom_role.yml 
+  657  clear
+  658  ls -l
+  659  rm invoke_custom_role.retry 
+  660  clear
+  661  ls -l
+  662  vim ansible.cfg 
+  663  vim invoke_custom_role.yml 
+  664  vim start_containers.yml 
+  665  ansible-playbook -i hosts invoke_custom_role.yml 
+  666  vim start_containers.yml 
+  667  docker images
+  668  ls
+  669  vim start_containers.yml 
+  670  ansible-playbook -i hosts invoke_custom_role.yml 
+  671  clear
+  672  ifconfig
+  673  cd /root/.ssh/
+  674  ls -l
+  675  clear
+  676  cd -
+  677  clear
+  678  ls -l
+  679  vim test.yml
+  680  ansible-playbook-2 start_containers.yml
+  681  ansible-playbook-2 -i hosts start_containers.yml
+  682  ansible-playbook -i hosts start_containers.yml
+  683  ansible-playbook-2.7 -i hosts start_containers.yml
+  684  ansible --version
+  685  python --version
+  686  clear
+  687  ls -l
+  688  clear
+  689  ls -l
+  690  clear
+  691  pwd
+  692  ls -l
+  693  cd ../../..
+  694  pwd
+  695  ls -l
+  696  cd root/
+  697  cd Verizon/
+  698  ls -l
+  699  cp -r DevOpsChennaiJuly2018/ PublicPrakash/
+  700  cp -r Day* PublicPrakash/
+  701  n
+  702  clear
+  703  cd PublicPrakash/
+  704  ls -l
+  705  git add
+  706  git add DevOpsChennaiJuly2018/
+  707  git add Day4
+  708  git commit all
+  709  git commit DevOpsChennaiJuly2018/
+  710  git push https://github.com/PrakashSundararaman/PublicPrakash.git
+  711  clear
+  712  cd /root/Verizon/Day4/
+  713  ls -l
+  714  clear
+  715  docker-py --version
+  716  pip status docker-py
+  717  status docker-py
+  718  docker-py
+  719  clear
+  720  mkdir python
+  721  cd python/
+  722  python --version
+  723  python
+  724  vim hello.py
+  725  ptyon ./hello.py 
+  726  python ./hello.py 
+  727  ls -l
+  728  ./hello.py
+  729  chmod +x hello.py 
+  730  ./hello.py
+  731  vim hello.py 
+  732  ./hello.py
+  733  vim hello.py 
+  734  ./hello.py
+  735  vim hello.py 
+  736  ./hello.py
+  737  vim hello.py 
+  738  ./hello.py
+  739  ls -l
+  740  vim function.py\
+  741  python function.py 
+  742  vim function.py\
+  743  python function.py 
+  744  vim function.py\
+  745  python function.py 
+  746  vim function.py\
+  747  python function.py 
+  748  vim function.pyvim function.py
+  749  ls 
+  750  rm 1
+  751  vim 1
+  752  rm 1
+  753  ls -l
+  754  vim function.py 
+  755  python function.py 
+  756  vim function.py 
+  757  python function.py 
+  758  vim function.py 
+  759  python function.py 
+  760  vim function.py 
+  761  python function.py 
+  762  vim function.py 
+  763  python function.py 
+  764  vim function.py 
+  765  python function.py 
+  766  vim one.py
+  767  python two.py 
+  768  vim two.py 
+  769  python two.py 
+  770  vim two.py 
+  771  python two.py 
+  772  vim two.py 
+  773  python two.py 
+  774  vim one.py
+  775  python two.py 
+  776  vim one.py
+  777  python one.py
+  778  python two.py 
+  779  vim one.py
+  780  python two.py 
+  781  vim two.py 
+  782  clear
+  783  ls 
+  784  vim one.pyc 
+  785  vim myclass.py
+  786  python myclass.py
+  787  vim myclass.py
+  788  python myclass.py
+  789  vim myclass.py
+  790  pwd
+  791  ls -l
+  792  pwd
+  793  vim inheritance.py
+  794  python inheritance.py 
+  795  vim inheritance.py
+  796  python inheritance.py 
+  797  vim inheritance.py
+  798  python inheritance.py 
+  799  vim inheritance.py
+  800  python inheritance.py 
+  801  vim inheritance.py
+  802  python inheritance.py 
+  803  vim inheritance.py
+  804  python inheritance.py 
+  805  vim inheritance.py
+  806  python inheritance.py 
+  807  vim inheritance.py
+  808  git clone https://github.com/tektutor/ansible-docker-dynamic-inventory.git
+  809  pwd
+  810  cd ..
+  811  pwd
+  812  ls -l
+  813  cd python/
+  814  ls -l
+  815  mv ansible-docker-dynamic-inventory/ ../
+  816  ls -l
+  817  cd ..
+  818  ls -l
+  819  cd ansible-docker-dynamic-inventory/
+  820  ls -l
+  821  vim dynamic_inventory.py 
+  822  ~
+  823  home
+  824  home~
+  825  clear
+  826  python dynamic_inventory.py 
+  827  ansible -i dynamic_inventory.py all -m ping
+  828  ansible -i hosts all -m ping
+  829  pwd
+  830  ansible -i /root/Verizon/Day4/hosts all -m ping
+  831  cd ..
+  832  ls 
+  833  cp ansible-docker-dynamic-inventory/ .
+  834  cp ansible-docker-dynamic-inventory/dynamic_inventory.py .
+  835  vim hosts
+  836  vim ansible.cfg 
+  837  ansible-playbook invoke_custom_role.yml 
+  838  clear
+  839  ls -l
+  840  cd ..
+  841  cd Day4/JEGAN/
+  842  ls -l
+  843  git pull https://github.com/tektutor/ansible-docker-dynamic-inventory.git
+  844  cd ..
+  845  git pull https://github.com/tektutor/ansible-docker-dynamic-inventory.git
+  846  cd ..
+  847  ls -l
+  848  git pull https://github.com/tektutor/ansible-docker-dynamic-inventory.git
+  849  cd DevOpsChennaiJuly2018/
+  850  git pull https://github.com/tektutor/ansible-docker-dynamic-inventory.git
+  851  cd Day4
+  852  ls -l
+  853  cd ..
+  854  ls -l
+  855  clear
+  856  cd ..
+  857  ls -l
+  858  git add *
+  859  cd ..
+  860  ls -l
+  861  cd =
+  862  cd -
+  863  cd PublicPrakash/
+  864  ls -l
+  865  git add *
+  866  git status
+  867  git commit -m "Adding Day4 changes"
+  868  git push
+  869  clear
+  870  cd ..
+  871  ls -l
+  872  cd DevOpsChennaiJuly2018/
+  873  ls -l
+  874  cd Day4/
+  875  ls -l
+  876  vi create_containers.yml 
+  877  vim invoke_custom_role.yml 
+  878  cp ../../Day4/dynamic_inventory.py .
+  879  vim ansible.cfg 
+  880  ansible-playbook -i hosts invoke_custom_role.yml 
+  881  pwd
+  882  cd ../../Day4/
+  883  lsls -l
+  884  ls -l
+  885  mkdir Custom_module
+  886  mkdir library
+  887  ansible centos1 -m ping vvvv
+  888  ansible centos1 -m ping -vvvv
+  889  cd /usr/lib/python2.7/site-packages/ansible
+  890  ls -l
+  891  cd modules/system/
+  892  ls -l
+  893  pwd
+  894  cd /usr/lib/python2.7/site-packages/ansible/modules/system
+  895  vim ping.py
+  896  ls -l
+  897  ansible-doc docker-container
+  898  ansible-doc 
+  899  ansible-doc --all
+  900  ls -l
+  901  cd ..
+  902  pwd
+  903  cd /root/Verizon/Day4
+  904  ls -l
+  905  vim ansible.cfg 
+  906  find ansible.cfg /root
+  907  cd /root/Verizon/PublicPrakash/DevOpsChennaiJuly2018/Day3/Playbooks/ansible.cfg
+  908  vim /root/Verizon/PublicPrakash/DevOpsChennaiJuly2018/Day3/Playbooks/ansible.cfg
+  909  /root/Verizon/PublicPrakash/DevOpsChennaiJuly2018/Day3/Playbooks/ansible.cfg
+  910  clear
+  911  history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
