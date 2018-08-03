@@ -1,0 +1,24 @@
+- name: Create docker containers
+  hosts: localhost
+
+  pre_tasks:
+     - debug: msg="Pre task invoked ..."
+     - include: start_containers.yml
+
+- name: Demonstrates accessing our brand new custom nginx role
+  hosts: all
+
+  pretasks:
+     - name: Pre-task - Ping the containers
+       ping
+
+  roles:
+     - nginx
+
+  tasks:
+     - debug: msg="Task invoked ..."
+     - include: test_nginx_containers.yml
+
+  post_tasks:
+     - debug: msg="Post Task invoked ..."
+     - include: remove_all_containers.yml

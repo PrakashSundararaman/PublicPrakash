@@ -1,0 +1,36 @@
+- name: Create the docker containers
+  hosts: localhost
+  ignore_errors: True
+  pre_tasks:
+    - debug: msg="Pre task invoked ..."
+#    - include: remove_all_containers.yml
+#    - include: manage_containers.yml 
+      
+- name: Demonstrates accessing our brand new custom nginx role
+  hosts: all
+  pre_tasks:
+     - name: Pre-task - Ping the containers
+       ping:
+
+  roles:
+    - nginx
+
+  tasks:
+    - debug: msg="Task invoked ..."
+
+  post_tasks:
+    - debug: msg="Post Task invoked ..."
+
+- name: Test and Cleanup 
+  hosts: localhost
+  ignore_errors: True
+  vars:
+    - nginx_urls:
+          - http://localhost:8001
+          - http://localhost:8002
+          - http://localhost:9001
+          - http://localhost:9002
+  tasks:
+    - include: test_nginx_containers.yml
+    - debug: msg="Cleaning up docker containers"
+    - include: remove_all_containers.yml
