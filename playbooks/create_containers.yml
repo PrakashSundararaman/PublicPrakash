@@ -4,7 +4,7 @@
       docker_container:
         name: "ubuntu{{item}}"
         hostname: "ubuntu{{item}}"
-        image: ansible-ubuntu
+        image: verizon/ansible-ubuntu
         state: started
         ports:
           - "200{{item}}:22"
@@ -15,7 +15,7 @@
       docker_container:
         name: "centos{{item}}"
         hostname: "centos{{item}}"
-        image: ansible-centos
+        image: verizon/ansible-centos
         state: started
         ports:
           - "300{{item}}:22"
